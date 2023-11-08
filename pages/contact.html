@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/pages/about.css">
+    <link rel="stylesheet" href="../styles/pages/contact.scss">
     <title>Lucy's Portfolio</title>
 
     <!-- link for font awesome -->
@@ -13,9 +13,17 @@
 <body>
     <header>
         <div class="leftheader">
-            <img src="../images/bothkids.jpeg" alt="">
+             <img src="../images/coffeecat-removebg-preview.png" alt="" title="Busy Coder Cat | Builds a portfolio site | Adds silly haikus">
+            <div class="hidden">
+                <p>Busy Coder Cat</p>
+                <p>Builds a portfolio site</p>
+                <p>Adds silly haikus</p>
+            </div>
             <h1>Lucy Shepherd</h1>
         </div>
+
+        <!-- Dropdown menu for widths less than 600px -->
+        
         <div class="dropdown">
             <i class="fa-solid fa-bars" id="dropbtn"></i>
             <div class="dropdown-content">
@@ -23,16 +31,20 @@
                 <a href="#">About</a>
                 <a href="#">Contact</a>
                 <a href="#">Blog</a>
-                <div class="socialmedia">
-                    <div id="li">
-                    <a href="https://www.linkedin.com/in/lucy-shepherd-44236928a/">
-                        <i class="fa-brands fa-linkedin"></i></a></div>
-                    <div id="github">
-                    <a href="https://github.com/lushepherd/">
-                    <i class="fa-brands fa-github"></i></a></div>
-                </div>
             </div>
         </div>
+
+        <!-- Nav bar for widths greater than 650px -->
+
+        <nav class="navmenu">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+            </div>
+        </nav>
+
     </header>
 
 
@@ -44,9 +56,9 @@
             <div id="github">
             <a href="https://github.com/lushepherd/">
             <i class="fa-brands fa-github"></i></a></div>
+
         </div>
+
     </footer>
-</body>
-</html>
 </body>
 </html>
