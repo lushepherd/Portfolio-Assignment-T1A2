@@ -135,6 +135,12 @@ header .dropdown #dropbtn:hover {
 }
 
 @media screen and (min-width: 650px) {
+  header .leftheader {
+    margin-left: 3vw;
+  }
+  header .navmenu {
+    margin-right: 3vw;
+  }
   #dropbtn {
     display: none;
   }
@@ -156,10 +162,10 @@ header .dropdown #dropbtn:hover {
 }
 @media screen and (min-width: 1100px) {
   header .leftheader {
-    margin-left: 2em;
+    margin-left: 5vw;
   }
   header .navmenu {
-    margin-right: 2em;
+    margin-right: 5vw;
   }
 }
 body {
