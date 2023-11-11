@@ -140,7 +140,7 @@ footer {
 }
 footer .socialmedia {
   display: flex;
-  gap: 1.5em;
+  gap: 1em;
   justify-content: center;
 }
 footer .socialmedia a {
@@ -157,6 +157,11 @@ footer a:hover {
   border-radius: 100%;
 }
 
+@media only screen and (min-width: 650px) {
+  footer .socialmedia {
+    gap: 2em;
+  }
+}
 body {
   margin: 0;
   min-height: 100vh;

@@ -1,4 +1,6 @@
+@import "../defaults/colors";
 @import "../components/utils";
+@import "../defaults/breakpoints";
 
 footer {
     background-color:  rgb(58, 49, 139, 0.7);
@@ -9,7 +11,7 @@ footer {
 
     .socialmedia {
         display: flex;
-        gap: 1.5em;
+        gap: 1em;
         justify-content: center;
 
         a {
@@ -29,3 +31,13 @@ footer a:hover {
   box-shadow: 0 0 20px 5px $secondary-color;
   border-radius: 100%;
 } 
+
+@media only screen and (min-width: $small) {
+
+    footer {
+
+        .socialmedia {
+            gap: 2em;
+        }
+    }
+}
