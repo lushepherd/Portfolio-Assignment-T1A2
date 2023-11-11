@@ -75,7 +75,7 @@ header .leftheader h1 {
   margin: 0;
   padding: 0;
   color: #cccccc;
-  font-size: 32px;
+  font-size: 1.4em;
 }
 header .leftheader img {
   width: 80px;
@@ -195,6 +195,13 @@ body main {
   justify-content: center;
   align-items: center;
 }
+body main .divide h3 {
+  padding: 1em;
+}
+body main .divide .border {
+  border-bottom: 1px solid #cccccc;
+  width: 100%;
+}
 body main .blog-container {
   background-color: rgba(58, 49, 139, 0.7);
   border-radius: 8px;
@@ -209,24 +216,25 @@ body main .blog-container {
   color: #cccccc;
   text-align: center;
 }
-body main .blog-container a {
+body main .blog-container .featured-blog a {
   text-decoration: none;
   color: #cccccc;
 }
-body main .blog-container h2 {
+body main .blog-container .featured-blog h2 {
   font-size: 2em;
   width: 100%;
 }
-body main .blog-container .feature {
+body main .blog-container .featured-blog .feature {
+  display: flex;
+  justify-content: center;
   margin-top: 2em;
-  border-bottom: 1px solid #cccccc;
   padding-bottom: 1em;
 }
-body main .blog-container .feature img {
+body main .blog-container .featured-blog .feature img {
   width: 60vw;
   border-radius: 8px;
 }
-body main .blog-container .feature article {
+body main .blog-container .featured-blog .feature article {
   width: 60vw;
   margin: 0 auto;
   display: flex;
@@ -238,60 +246,89 @@ body main .blog-container .other-blogs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 2em;
-  margin: 2em;
-}
-body main .blog-container .other-blogs .blog-list .blog {
-  width: 60vw;
-  border: 1px solid #cccccc;
   padding: 1em;
-  margin: 1em auto 0 auto;
-  border-radius: 8px;
+  margin: 0;
 }
-body main .blog-container .other-blogs .blog-list h3 {
-  font-size: 1.8em;
-  padding: 0;
-  margin: 0 auto 2em auto;
-  width: 60vw;
-}
-body main .blog-container .other-blogs .blog-list img {
-  width: 50vw;
-  border-radius: 8px;
-  margin-top: 2em;
+body main .blog-container .other-blogs .border {
+  border: 0;
 }
 body main .blog-container .other-blogs .blog-list a {
   text-decoration: none;
   color: #cccccc;
+}
+body main .blog-container .other-blogs .blog-list .blog:hover {
+  background-color: rgb(58, 49, 139);
+  transition: 0.5s;
+}
+body main .blog-container .other-blogs .blog-list .blog {
+  width: 60vw;
+  border: 1px solid #cccccc;
+  padding: 0;
+  margin: 1em auto 0 auto;
+  border-radius: 8px;
+}
+body main .blog-container .other-blogs .blog-list .blog img {
+  width: 50vw;
+  border-radius: 8px;
+  margin-top: 2em;
+}
+body main .blog-container .other-blogs .blog-list .blog p {
+  padding: 0 1em;
 }
 
 @media only screen and (min-width: 650px) {
   body main {
     max-width: 100vw;
   }
+  body main .divide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .divide .border {
+    border-bottom: 1px solid #cccccc;
+    width: 90%;
+  }
+  body main .border {
+    border: 1px solid #cccccc;
+  }
   body main .blog-container .featured-blog {
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     width: 60vw;
     padding: 0;
   }
+  body main .blog-container .featured-blog .feature p {
+    padding: 1em;
+  }
   body main .blog-container .other-blogs {
-    margin: 0 auto 2em auto;
+    margin: 1em auto 0 auto;
   }
   body main .blog-container .other-blogs h3 {
-    margin: 0;
-    padding: 0;
+    margin: 1em;
     border-bottom: 1px solid #cccccc;
-    padding: 0 0 1em 0;
+    padding: 2em 0;
+    width: 100%;
   }
   body main .blog-container .other-blogs .blog-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
+  body main .blog-container .other-blogs .blog-list .blog:hover {
+    background-color: rgb(58, 49, 139);
+    transition: 0.5s;
   }
   body main .blog-container .other-blogs .blog-list .blog {
     width: 25vw;
     border: 1px solid #cccccc;
+    padding: 1em;
   }
   body main .blog-container .other-blogs .blog-list .blog img {
     width: 25vw;
+    margin: 1em 0 0 0;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -315,22 +352,23 @@ body main .blog-container .other-blogs .blog-list a {
     width: 50vw;
   }
   body main .blog-container .other-blogs {
-    margin: 0 auto 4em auto;
+    margin: 0 1em 4em 1em;
   }
   body main .blog-container .other-blogs h3 {
     margin: 0;
     padding: 0;
     border-bottom: 1px solid #cccccc;
-    padding: 0 0 1em 0;
+    padding: 1em 0 2em 0;
   }
   body main .blog-container .other-blogs .blog-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 0;
   }
   body main .blog-container .other-blogs .blog-list .blog {
     width: 10vw;
     border: 1px solid #cccccc;
-    margin: 3em 1em 0 1em;
+    margin: 2em 0.5em 0 0.5em;
   }
   body main .blog-container .other-blogs .blog-list .blog img {
     width: 100%;
