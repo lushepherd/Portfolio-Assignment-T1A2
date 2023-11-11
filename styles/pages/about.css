@@ -275,7 +275,7 @@ body main .about .bottom-container img {
     align-items: center;
   }
   body main .about .top-container img {
-    width: 40vw;
+    width: 300px;
     height: 100%;
   }
   body main .about .top-container section {
@@ -303,13 +303,14 @@ body main .about .bottom-container img {
   body main .about h2 {
     border-bottom: 1px solid #cccccc;
     text-decoration: none;
+    margin: 0 0.5em 0.5em 0.5em;
   }
   body main .about .top-container {
     width: 100%;
     height: 100%;
     justify-content: space-between;
     flex-direction: row;
-    margin: 2em 0 0 0;
+    margin: 1em 0 0 0;
     padding: 0;
   }
   body main .about .top-container section {
