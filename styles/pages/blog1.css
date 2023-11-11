@@ -198,6 +198,9 @@ body main .blog-container {
   padding: 2em;
   flex-wrap: wrap;
 }
+body main .blog-container #divider {
+  width: 25px;
+}
 body main .blog-container img {
   width: 60vw;
   border-radius: 8px;
