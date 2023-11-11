@@ -220,6 +220,7 @@ body main .about .top-container {
 body main .about .top-container img {
   width: 60vw;
   border-radius: 50%;
+  box-shadow: 0 0 2em rgb(58, 49, 139);
 }
 body main .about .top-container section {
   margin: 2em auto;
@@ -244,17 +245,6 @@ body main .about .top-container section #resume-btn:hover {
 }
 body main .about .top-container section h3 {
   width: 100%;
-}
-body main .about .bottom-container {
-  display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 2em;
-}
-body main .about .bottom-container img {
-  width: 30vw;
-  border-radius: 8px;
 }
 
 @media only screen and (min-width: 650px) {

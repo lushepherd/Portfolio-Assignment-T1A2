@@ -48,6 +48,7 @@ body {
                     img {
                         width: 60vw;
                         border-radius: 50%;
+                        box-shadow: 0 0 2em rgb(58, 49, 139);
                     }
 
                     section {
@@ -82,21 +83,6 @@ body {
                         }
                     }
 
-                }
-
-                .bottom-container {
-
-                    display: flex;
-                    gap: 1em;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    padding-top: 2em;
-
-                    img {
-                        width: 30vw;
-                        border-radius: 8px;
-                        
-                    }
                 }
         }
         } 
