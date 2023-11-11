@@ -204,6 +204,13 @@ body main .about-text-box .textarea {
   width: 60vw;
   margin: 1em;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .about-text-box .textarea img {
+  width: 25px;
 }
 body main .about-text-box .textarea a:hover {
   color: #1ac0c0;
@@ -213,6 +220,7 @@ body main .about-text-box .textarea a {
   text-decoration: underline;
   color: #cccccc;
   font-size: 1.3em;
+  margin: 1em;
 }
 body main .about-text-box .textarea p {
   font-size: 1.2em;

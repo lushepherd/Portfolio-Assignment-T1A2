@@ -41,6 +41,15 @@ body {
                     width: 60vw;
                     margin: 1em;
                     text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+
+                        width: 25px;
+                    }
                     a:hover {
                         color:$secondary-color;
                         transition: 0.5s;
@@ -50,6 +59,7 @@ body {
                         text-decoration: underline;
                         color: $third-color;
                         font-size: 1.3em;
+                            margin: 1em;
                       }
         
                     p {
