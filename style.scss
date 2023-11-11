@@ -25,7 +25,6 @@ body {
                 border-radius: 8px;
                 margin: 4em auto;
                 width: 65vw;
-                padding: 30px;
                 box-shadow: 0 0 2em rgb(69, 69, 69);
                 display: flex;
                 justify-content: space-around;
@@ -40,7 +39,7 @@ body {
 
                 .textarea {
                     width: 60vw;
-                    margin: 2em;
+                    margin: 1em;
                     text-align: center;
                     a:hover {
                         color:$secondary-color;
@@ -125,12 +124,12 @@ body {
                 padding: 3em;
 
                 img {
-                    width: 20vw;
+                    width: 24vw;
                     border-radius: 8px;
                 }
 
                 .textarea {
-                    width: 20vw;
+                    width: 24vw;
                     margin: 2em;
     
                 
