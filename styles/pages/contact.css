@@ -17,7 +17,7 @@ footer {
 }
 footer .socialmedia {
   display: flex;
-  gap: 10px;
+  gap: 1.5em;
   justify-content: center;
 }
 footer .socialmedia a {
@@ -155,5 +155,89 @@ header .dropdown #dropbtn:hover {
   }
   header .navmenu {
     margin-right: 2em;
+  }
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  max-width: 100vw;
+  background: url(../../images/bgsquare.jfif) no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+body main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main .contact {
+  background-color: rgba(58, 49, 139, 0.7);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #cccccc;
+  margin: 4em;
+  box-shadow: 0 0 2em rgb(69, 69, 69);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+}
+body main .contact .contact-container .email, body main .contact .contact-container .address, body main .contact .contact-container .phone {
+  margin-bottom: 2em;
+}
+body main .contact h2 {
+  margin: 0.5em;
+  text-decoration: underline;
+}
+body main .contact section {
+  padding-bottom: 2em;
+  margin: 0.5em auto 2em auto;
+  border-bottom: 1px solid #cccccc;
+  width: 80%;
+}
+body main .contact img {
+  width: 100px;
+  border-radius: 50%;
+}
+body main .contact h3, body main .contact p {
+  padding: 0;
+  margin: 0.5em;
+}
+
+@media only screen and (min-width: 650px) {
+  body main {
+    max-width: 100vw;
+  }
+  body main .contact {
+    margin: 10vh auto;
+    width: 60vw;
+    padding: 2em;
+    background-color: rgba(58, 49, 139, 0.7);
+  }
+  body main .contact h2 {
+    margin-bottom: 1vh;
+  }
+  body main .contact .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body main .contact .contact-container .email, body main .contact .contact-container .phone, body main .contact .contact-container .address {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  body main .contact {
+    margin: 4em auto;
+    width: 60vw;
+  }
+  body main .contact .contact-container {
+    width: 100%;
+    justify-content: space-evenly;
   }
 }/*# sourceMappingURL=contact.css.map */
