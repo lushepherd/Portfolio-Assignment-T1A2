@@ -34,6 +34,18 @@ body {
                 color: $third-color;
                 text-align: center;
 
+                a {
+                    text-decoration: none;
+                    color: $third-color;
+                }
+
+                // a:hover {
+
+                //     background-color: $secondary-color;
+                //     transition: 0.5s;
+                //     overflow: hidden;
+                // }
+
 
                 h2 {
                     font-size: 2em;
@@ -60,7 +72,7 @@ body {
                         justify-content: center;
                         align-items: center;
 
-
+                        
                         
                     }
 
@@ -74,29 +86,40 @@ body {
                     padding-top: 2em;
                     margin: 2em;
 
+                    .blog-list {
 
-                    .blog {
+                        .blog {
 
-                        width: 60vw;
-                        border: 1px solid $third-color;
-                        padding: 1em;
-                        margin: 1em auto 0 auto;
-                        border-radius: 8px;
+                            width: 60vw;
+                            border: 1px solid $third-color;
+                            padding: 1em;
+                            margin: 1em auto 0 auto;
+                            border-radius: 8px;
+                        }
+    
+                        h3 {
+                            font-size: 1.8em;
+                            padding: 0;
+                            margin: 0 auto 2em auto;
+                            width: 60vw;
+                        }
+    
+                        img {
+                            width: 50vw;
+                            border-radius: 8px;
+                            margin-top: 2em;
+                            
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $third-color;
+                        }
+
                     }
 
-                    h3 {
-                        font-size: 1.8em;
-                        padding: 0;
-                        margin: 0 auto 2em auto;
-                        width: 60vw;
-                    }
 
-                    img {
-                        width: 50vw;
-                        border-radius: 8px;
-                        margin-top: 2em;
-                        
-                    }
+                    
                 }
         }
         } 
