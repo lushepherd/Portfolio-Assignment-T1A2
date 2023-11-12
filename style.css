@@ -84,7 +84,12 @@ header .dropdown:focus .dropdown-content {
   visibility: visible;
 }
 header .dropbtn:hover, header .dropdown:focus .dropbtn {
-  transform: rotate(90deg);
+  color: rgb(58, 49, 139);
+  background-color: rgba(204, 204, 204, 0.7);
+  transform: scale(1.3);
+  transition: 0.5s;
+  box-shadow: 0 0 20px 5px #1ac0c0;
+  border-radius: 100%;
   cursor: pointer;
 }
 header .dropdown .db2 {
@@ -213,6 +218,7 @@ body main .about-text-box {
 body main .about-text-box img {
   width: 60vw;
   border-radius: 8px;
+  margin-top: 1em;
 }
 body main .about-text-box .textarea {
   width: 60vw;
@@ -263,6 +269,7 @@ body main .about-text-box .textarea h2 {
   body main .about-text-box img {
     width: 35vw;
     border-radius: 8px;
+    margin: 0;
   }
   body main .about-text-box .textarea {
     width: 35vw;
