@@ -182,7 +182,7 @@ body main .contact {
   text-align: center;
   font-size: 1.2em;
   color: #cccccc;
-  margin: 4em auto;
+  margin: 4em;
   box-shadow: 0 0 2em rgb(69, 69, 69);
   display: flex;
   flex-direction: column;
