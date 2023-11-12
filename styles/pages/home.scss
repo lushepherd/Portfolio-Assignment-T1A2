@@ -1,0 +1,134 @@
+@import "../../style";
+
+// Styling for main page content in less than 650px
+
+// Aligns the main box area
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+
+    // Syling the main box area
+
+    .main-box {
+        background-color:  rgb(58, 49, 139, 0.7);
+        border-radius: 8px;
+        margin: 4em auto;
+        width: 65vw;
+        box-shadow: 0 0 2em rgb(69, 69, 69);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2em;
+        flex-wrap: wrap;
+
+        // Styling main image
+
+        img {
+            width: 60vw;
+            border-radius: 8px;
+            margin-top: 1em;
+        }
+
+        // Styling main text
+
+        .textarea {
+            width: 60vw;
+            margin: 1em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            // Styling paw print dividers
+
+            img {
+                width: 25px;
+            }
+
+            // Changes text on hover for "learn more about me" link text
+
+            a:hover {
+                color:$secondary-color;
+                transition: 0.5s;
+            }
+
+            a {
+                text-decoration: underline;
+                color: $third-color;
+                font-size: 1.3em;
+                    margin: 1em;
+            }
+
+            // Text stying for main text area  
+
+            p {
+              font-size: 1.2em;
+              color: $third-color;
+            }  
+
+            // Header Styling for main text area
+            h2 {
+                color: $third-color;
+            }
+        }    
+    }
+}
+
+// Changes for screens wider than 650px
+
+@media only screen and (min-width: $small) {
+
+    main {
+
+    // Changes to margin, width and padding to look centred and nicer in tablet views 
+    
+    .main-box {
+        margin: 10vh auto;
+        width: 60vw;
+        padding-top: 4em;
+
+        img {
+            width: 50vw;
+            margin: 0;
+        }
+
+        .textarea {
+            width: 50vw;
+            margin: 2em;
+
+        }
+        
+        }
+    }   
+} 
+    
+// Responsiveness for desktop, more than 1100px wide
+
+@media only screen and (min-width: $medium) {
+
+main {
+
+    // Adjusts with to suit screen, reduce padding for styling
+
+    .main-box {
+        width: auto;
+        padding: 3em;
+
+        // As display will be horizontal, width of img and textarea are reduced 
+
+        img {
+            width: 24vw;
+        }
+
+        .textarea {
+            width: 24vw;
+        }
+        }
+    }
+}    
+    

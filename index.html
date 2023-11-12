@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./images/f">
-    <title>Lucy's Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/pages/home.css">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <title>Lucy's Portfolio</title>
 
-    <!-- link for font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- link for font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-</head>
-<body>
-    <header>
-        <div class="leftheader">
-             <img src="./images/coffeecat-removebg-preview.png" alt="" title="Busy Coder Cat | Builds a portfolio site | Adds silly haikus">
-            <div class="hidden">
-                <p>Busy Coder Cat</p>
-                <p>Builds a portfolio site</p>
-                <p>Adds silly haikus</p>
+    </head>
+
+    <body>
+        <header>
+
+            <div class="leftheader">
+                <img src="./images/coffeecat-removebg-preview.png" alt="" title="Busy Coder Cat | Builds a portfolio site | Adds silly haikus">
+                <h1>Lucy Shepherd</h1>
             </div>
-            <h1>Lucy Shepherd</h1>
-        </div>
 
-        <!-- Dropdown menu for widths less than 600px -->
-        
-        <div class="dropdown" tabindex="1">
-            <i class="db2" tabindex="1"></i>
-            <a class="dropbtn"><i class="fa-solid fa-bars"></i></a>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="./pages/about.html">About</a>
-                <a href="./pages/contact.html">Contact</a>
-                <a href="./pages/blog.html">Blog</a>
+            <!-- Dropdown menu for widths less than 650px, CSS and HTML solution provided by https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown Arsen-->
+            
+            <!-- Container for dropdown, tabindex 1 gives this element preference if navigating via tab key -->
+
+            <div class="dropdown" tabindex="1">
+
+                <!-- Transparent/mask element that covers dropdown. When mask is clicked it hides content -->
+
+                <i class="db2" tabindex="1"></i>
+
+                <!-- Menu icon from Fontawesome wrapped in anchor tag for my dropdown menu -->
+
+                <a class="dropbtn"><i class="fa-solid fa-bars"></i></a>
+
+                <!-- Dropdown menu page links -->
+
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="./pages/about.html">About</a>
+                    <a href="./pages/contact.html">Contact</a>
+                    <a href="./pages/blog.html">Blog</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Nav bar for widths greater than 650px -->
+            <!-- Nav bar for widths greater than 650px -->
 
-        <nav class="navmenu">
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-              
-                <a href="./pages/about.html">About</a>
-                
-                <a href="./pages/contact.html">Contact</a>
-                <a href="./pages/blog.html">Blog</a>
-            </div>
-        </nav>
+            <nav class="navmenu">
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="./pages/about.html">About</a>
+                    <a href="./pages/contact.html">Contact</a>
+                    <a href="./pages/blog.html">Blog</a>
+                </div>
+            </nav>
+        </header>
 
-    </header>
+            <!-- Main page content -->
 
-        <main>
-            <div class="about-text-box">
-                <img src="./images/flying.jpeg" alt="Me">
-                <div class="textarea">
-                    <h2>Hello, I'm Lucy.</h2>
-                    <img src="./images/divider.png" alt="">
-                    <p>Full stack web developer based on the Gold Coast, QLD.</p>
-                    <img src="./images/divider.png" alt="">                         
-                    <a href="./pages/about.html">Learn more about me here</a>
-                </div> 
-            </div>
-    
+            <main>
+                <div class="main-box">
+                    <img src="./images/flying.jpeg" alt="Whimsical cartoon, silhouette of woman and 2 cats flying in night sky above city">
+                    <article class="textarea">
+                        <h2>Hello, I'm Lucy.</h2>
+                        <img src="./images/divider.png" alt="Cat paw print divider">
+                        <p>Full stack web developer based on the Gold Coast, QLD.</p>
+                        <img src="./images/divider.png" alt="Cat paw print divider">                         
+                        <a href="./pages/about.html">Learn more about me here</a>
+                    </article> 
+                </div>
+            </main>     
 
-            </div>
-        </main>     
-   
+            <!-- Footer bar  -->
 
-    <footer>
-        <div class="socialmedia">
-            <div id="li">
-            <a href="https://www.linkedin.com/in/lucy-shepherd-44236928a/">
-                <i class="fa-brands fa-linkedin"></i></a></div>
-            <div id="github">
-            <a href="https://github.com/lushepherd/">
-            <i class="fa-brands fa-github"></i></a></div>
-            <div id="fb">
-                <a href="https://www.facebook.com/luzdafuzz">
-                    <i class="fa-brands fa-facebook"></i></a></div>
-            <div id="twitter">
-                <a href="https://twitter.com/lushepherd6">
-                    <i class="fa-brands fa-twitter"></i></a></div>
+        <footer>
+            <div class="socialmedia">
+                <div id="linkedin">
+                    <a href="https://www.linkedin.com/in/lucy-shepherd-44236928a/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div id="github">
+                    <a href="https://github.com/lushepherd/">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div id="facebook">
+                    <a href="https://www.facebook.com/luzdafuzz">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div id="twitter">
+                    <a href="https://twitter.com/lushepherd6">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+        </footer>
 
-    </footer>
-</body>
+    </body>
 </html>
