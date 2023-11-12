@@ -97,11 +97,11 @@ header .dropdown .dropbtn {
 }
 header .dropdown .dropdown-content {
   position: absolute;
-  top: 50%;
+  top: 55px;
   right: -20px;
   font-size: 24px;
   text-align: center;
-  background-color: rgba(58, 49, 139, 0.7);
+  background-color: rgba(58, 49, 139, 0.9);
   width: 100vw;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 100000;
@@ -113,7 +113,6 @@ header .dropdown .dropdown-content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  transition: 0.35s ease-out;
 }
 header .dropdown .dropdown-content a:hover {
   background-color: #1ac0c0;
