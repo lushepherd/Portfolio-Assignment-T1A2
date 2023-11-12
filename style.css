@@ -16,6 +16,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   border-bottom: 10px solid #cccccc;
+  /* mask to close menu by clicking on the button */
 }
 header nav {
   display: none;
@@ -44,53 +45,67 @@ header .dropdown {
   position: relative;
   display: inline-block;
 }
-header .dropdown .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(58, 49, 139, 0.7);
-  text-align: center;
-  right: -10px;
-  font-size: 24px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-header .dropdown .dropdown-content .socialmedia {
-  display: flex;
-  justify-content: center;
-}
-header .dropdown .dropdown-content .socialmedia #github:hover a, header .dropdown .dropdown-content .socialmedia #li:hover a {
-  transition: 0.5s;
-  background: none;
+header .dropdown .dropbtn {
+  background-color: rgba(58, 49, 139, 0);
   color: #1ac0c0;
+  padding: 16px;
+  font-size: 28px;
+  border: none;
+  transition: 0.35s ease-out;
+  cursor: pointer;
+}
+header .dropdown .dropdown-content {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(58, 49, 139, 0.7);
+  width: 100vw;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100000;
+  visibility: hidden;
+  transition: 0.35s ease-out;
 }
 header .dropdown .dropdown-content a {
   color: #cccccc;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: 0.35s ease-out;
 }
 header .dropdown .dropdown-content a:hover {
   background-color: #1ac0c0;
   color: rgb(58, 49, 139);
-  transition: 0.5s;
+  transition: 0.35s;
 }
-header .dropdown #dropbtn {
-  background-color: rgba(58, 49, 139, 0);
-  color: #1ac0c0;
-  padding: 16px;
-  font-size: 36px;
-  border: none;
+header .dropdown:focus .dropdown-content {
+  outline: none;
+  transform: translateY(20px);
+  visibility: visible;
 }
-header .dropdown #dropbtn:hover {
-  font-size: 48px;
+header .dropbtn:hover, header .dropdown:focus .dropbtn {
   transform: rotate(90deg);
-  transition: 1s;
-  display: block;
+  cursor: pointer;
 }
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  width: 100vw;
+header .dropdown .db2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
+  display: none;
+  cursor: pointer;
+}
+header .dropdown:focus .db2 {
+  display: inline-block;
+}
+header .dropdown .db2:focus .dropdown-content {
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 @media screen and (min-width: 650px) {
@@ -100,7 +115,7 @@ header .dropdown #dropbtn:hover {
   header .navmenu {
     margin-right: 3vw;
   }
-  #dropbtn {
+  .dropbtn {
     display: none;
   }
   .navmenu {

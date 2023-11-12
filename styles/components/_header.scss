@@ -38,66 +38,80 @@ header {
           }
 
       }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color:  rgb(58, 49, 139, 0.7);
-            text-align: center;
-            right: -10px;
-            font-size: 24px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-
-            .socialmedia {
-                display: flex;
-                justify-content: center;
-
-                #github:hover a, #li:hover a {
-                    transition: 0.5s;
-                    background:none;
-                    color: $secondary-color;
-                }
-            } 
-        }
-        .dropdown-content a {
-            color:$third-color;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: $secondary-color;
-            color: $primary-color;
-            transition: 0.5s;
-        }
-
-        #dropbtn {
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        
+    
+        .dropbtn {
             background-color:  rgb(58, 49, 139, 0.0);
             color:$secondary-color;
             padding: 16px;
-            font-size: 36px;
+            font-size: 28px;
             border: none;
-        }   
+            transition: 0.35s ease-out;
+            cursor: pointer;
+          }
+    
+          .dropdown-content {
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            font-size: 24px;
+            text-align: center;
+            background-color:  rgb(58, 49, 139, 0.7);
+            width: 100vw;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 100000;
+            visibility: hidden;
+            transition: 0.35s ease-out;
+    
+            a {
+                color:$third-color;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                transition: 0.35s ease-out;
+              }
+    
+              a:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+                transition: 0.35s;
+              }  
+          }
+        
+      }
 
-        #dropbtn:hover {
-            font-size: 48px;
-            transform: rotate(90deg);
-            transition: 1s;
-            display: block;
-        }
+      .dropdown:focus .dropdown-content {
+        outline: none;
+        transform: translateY(20px);
+        visibility: visible;
+      }
+      
+      .dropbtn:hover, .dropdown:focus .dropbtn {
+        transform: rotate(90deg);
+        cursor: pointer;
+    
+      }
+      
+      /* mask to close menu by clicking on the button */
+      .dropdown .db2 {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0; opacity: 0;
+        z-index: 10;
+        display: none;
+        cursor: pointer;
+      }
+      .dropdown:focus .db2 {
+        display: inline-block;
+      }
+      .dropdown .db2:focus .dropdown-content {
+        outline: none;
+        visibility: hidden;
+        opacity: 0;
+      }
     }
-}
-  
-.dropdown:hover .dropdown-content {
-  display: block;
-  width: 100vw;
-  
-}
 
 @media screen and (min-width: $small) {
 
@@ -110,7 +124,7 @@ header {
             margin-right: 3vw;
         }
     }
-    #dropbtn {
+    .dropbtn {
         display: none;
     }
 
