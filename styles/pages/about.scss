@@ -5,6 +5,8 @@
 @import "../components/utils";
 @import "../../style";
 
+// Widths less than 650px
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -65,9 +67,7 @@ main {
                     background-color: $secondary-color;
                     transition: 0.5s;
                 }
-
             }
-
         }
     }
 }
@@ -75,90 +75,78 @@ main {
 // Styling on screens 650px and wider
 
 @media only screen and (min-width: $small) {
+       
+    main {
+        max-width: 100vw;
 
-    body {
-        
-        main {
+        .about-me {
+            width: 60vw;
+            padding: 2em;
 
-            max-width: 100vw;
+            .about-me-container {
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+                margin: 1em;
+                padding-bottom: 2em;
+                flex-wrap: wrap;
+                align-items: center;
+                
+                img {
+                    width: 300px;
+                    height: 100%;
+                }
 
-            .about-me {
-
-                width: 60vw;
-                padding: 2em;
-
-                .about-me-container {
-                    display: flex;
-                    justify-content: center;
-                    gap: 1em;
-                    margin: 1em;
-                    padding-bottom: 2em;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    
-                    img {
-
-                        width: 300px;
-                        height: 100%;
-                    }
-
-                    section {
-                        
-                        width: 50vw;
-                        margin: 0;
-                    }
+                section {                    
+                    width: 50vw;
+                    margin: 0;
                 }
             }
         }
     }
-}    
+}
+   
 
 // Styling for screens 1100px and wider
             
 @media only screen and (min-width: $medium) {
 
-    body {
+    main {
 
-        main {
+        .about-me {
+            padding: 3em;
+            margin: 4em auto;
 
-            .about-me {
-                padding: 3em;
-                margin: 4em auto;
-
-                h2 {
-                    border-bottom: 1px solid $third-color;
-                    text-decoration: none;
-                    margin: 0 0.5em 0.5em 0.5em;
-                   
+            h2 {
+                border-bottom: 1px solid $third-color;
+                text-decoration: none;
+                margin: 0 0.5em 0.5em 0.5em;
                 }
-    
-                .about-me-container {
 
-                    width: 100%;
+            .about-me-container {
+                width: 100%;
+                height: 100%;
+                justify-content: space-between;
+                flex-direction: row;
+                margin: 1em 0 0 0;
+                padding: 0;
+
+                section {
+
                     height: 100%;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    margin: 1em 0 0 0;
-                    padding: 0;
+                    justify-content: space-around;
+                    text-align: left;
+                    width: 35vw;
 
-                    section {
+                    #resume-btn {
 
-                        height: 100%;
-                        justify-content: space-around;
-                        text-align: left;
-                        width: 35vw;
-
-                        #resume-btn {
-
-                            align-self: flex-start;
-                        }
-
+                        align-self: flex-start;
                     }
+                }
 
-                    img {
+                img {
 
-                        width: 20vw;
-                    }
+                    width: 20vw;
                 }
             }
         }

@@ -22,15 +22,11 @@ main {
         padding: 2em;
         flex-wrap: wrap;
 
-        // Styling main image
-
         img {
             width: 60vw;
             border-radius: 8px;
             margin-top: 1em;
         }
-
-        // Styling main text
 
         .textarea {
             width: 60vw;
@@ -41,13 +37,9 @@ main {
             justify-content: center;
             align-items: center;
 
-            // Styling paw print dividers
-
             img {
                 width: 25px;
             }
-
-            // Changes text on hover for "learn more about me" link text
 
             a:hover {
                 color:$secondary-color;
@@ -61,14 +53,11 @@ main {
                     margin: 1em;
             }
 
-            // Text stying for main text area  
-
             p {
               font-size: 1.2em;
               color: $third-color;
             }  
 
-            // Header Styling for main text area
             h2 {
                 color: $third-color;
             }
@@ -81,8 +70,6 @@ main {
 @media only screen and (min-width: $small) {
 
     main {
-
-    // Changes to margin, width and padding to look centred and nicer in tablet views 
     
     .main-box {
         margin: 10vh auto;
@@ -108,23 +95,19 @@ main {
 
 @media only screen and (min-width: $medium) {
 
-main {
+    main {
 
-    // Adjusts with to suit screen, reduce padding for styling
+        .main-box {
+            width: auto;
+            padding: 3em;
 
-    .main-box {
-        width: auto;
-        padding: 3em;
+            img {
+                width: 24vw;
+            }
 
-        // As display will be horizontal, width of img and textarea are reduced 
-
-        img {
-            width: 24vw;
-        }
-
-        .textarea {
-            width: 24vw;
-        }
+            .textarea {
+                width: 24vw;
+            }
         }
     }
 }    
