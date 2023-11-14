@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;1,400;1,800&family=Sedgwick+Ave+Display&display=swap");
 header {
   background-color: rgba(58, 49, 139, 0.7);
   display: flex;
@@ -155,11 +156,6 @@ footer a:hover {
   border-radius: 100%;
 }
 
-@media only screen and (min-width: 650px) {
-  footer .socialmedia {
-    gap: 2em;
-  }
-}
 body {
   margin: 0;
   min-height: 100vh;
@@ -169,9 +165,12 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  font-family: "Alegreya", serif;
+  color: #cccccc;
 }
 
 main {
+  font-family: "Alegreya", serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

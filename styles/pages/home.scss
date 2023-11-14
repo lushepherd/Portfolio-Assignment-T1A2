@@ -2,16 +2,13 @@
 
 // Styling for main page content in less than 650px
 
-// Aligns the main box area
-
 main {
+    font-family: 'Alegreya', serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     max-width: 100vw;
-
-    // Syling the main box area
 
     .main-box {
         background-color:  rgb(58, 49, 139, 0.7);
