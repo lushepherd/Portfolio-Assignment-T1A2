@@ -60,6 +60,10 @@ main {
             width: 70vw;
             background-color:  rgb(58, 49, 139, 0.7);
 
+            h2 {
+                padding: 1em 0 2em 0;
+            }
+
             .blog-content {
                 display: flex;
                 flex-direction: column;
@@ -67,11 +71,11 @@ main {
                 align-items: center;
 
                 img {
-                    width: 50vw;
+                    width: 60vw;
                 }
 
                 article{
-                    width: 50vw;;
+                    width: 60vw;;
                 }               
             }
         }
@@ -91,7 +95,7 @@ main {
             width: 70vw;
 
             h2 {
-                padding-bottom: 0.5em;
+                padding: 0 0 0.5em 0;
                 border-bottom: 1px solid $third-color;
                 width: 90%;
                 text-align: center;
