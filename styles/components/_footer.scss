@@ -4,9 +4,10 @@
 
 footer {
     background-color:  rgb(58, 49, 139, 0.7);
-    padding: 10px;
+    padding: 0.7em;
     margin-top: auto;
     border-top: 10px solid $third-color;
+    height: 100%;
 
     .socialmedia {
         display: flex;
@@ -23,8 +24,5 @@ footer {
 
 footer a:hover {
   color: $secondary-color;
-  transform: scale(1.3);
   transition: 0.5s;
-  box-shadow: 0 0 20px 5px $secondary-color;
-  border-radius: 100%;
 } 
