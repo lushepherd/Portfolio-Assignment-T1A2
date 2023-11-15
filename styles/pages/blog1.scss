@@ -26,6 +26,11 @@ main {
         padding: 2em;
         flex-wrap: wrap;
 
+        h2 {
+            margin: 0;
+            padding-bottom: 1em;
+        }
+
         #divider {
             width: 25px;
         }

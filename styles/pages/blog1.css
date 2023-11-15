@@ -341,6 +341,10 @@ main .blog-container {
   padding: 2em;
   flex-wrap: wrap;
 }
+main .blog-container h2 {
+  margin: 0;
+  padding-bottom: 1em;
+}
 main .blog-container #divider {
   width: 25px;
 }
