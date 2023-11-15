@@ -86,9 +86,11 @@ main {
             width: 70vw;
 
             h2 {
+                padding-bottom: 0.5em;
                 border-bottom: 1px solid $third-color;
                 width: 90%;
                 text-align: center;
+                margin-bottom: 0;
             }
 
             .blog-content {

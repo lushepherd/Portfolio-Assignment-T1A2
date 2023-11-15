@@ -359,6 +359,7 @@ main .blog-container .featured-blog a {
 main .blog-container .featured-blog h2 {
   font-size: 2em;
   width: 100%;
+  margin-top: 0;
 }
 main .blog-container .featured-blog .feature {
   display: flex;
@@ -421,6 +422,9 @@ main .blog-container .other-blogs .blog-list .blog p {
     width: 60vw;
     padding: 0;
   }
+  main .blog-container .featured-blog .feature h2 {
+    padding: 1em;
+  }
   main .blog-container .featured-blog .feature p {
     padding: 1em;
   }
@@ -457,11 +461,11 @@ main .blog-container .other-blogs .blog-list .blog p {
     padding: 0;
   }
   main .blog-container .featured-blog {
-    margin: 4em auto 0 auto;
+    margin: 2em auto 0 auto;
     height: 100%;
   }
   main .blog-container .featured-blog h2 {
-    padding: 0;
+    padding: 0.5em;
     margin: 0;
   }
   main .blog-container .featured-blog .feature article {
