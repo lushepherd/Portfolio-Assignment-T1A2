@@ -29,6 +29,7 @@ main {
         h2 {
             margin: 0;
             padding-bottom: 1em;
+            
         }
 
         #divider {
@@ -61,7 +62,7 @@ main {
             background-color:  rgb(58, 49, 139, 0.7);
 
             h2 {
-                padding: 1em 0 2em 0;
+                padding: 0 0 1em 0;
             }
 
             .blog-content {
@@ -112,11 +113,12 @@ main {
                 img {
                     width: 25vw;
                     border-radius: 8px;
+                    align-self: center;
                 }
 
                 article {
                     width: 35vw;
-                    margin: 2em;
+                    margin: 0 0 2em 2em;
 
                     p {
                     text-align: left;

@@ -368,7 +368,7 @@ main .blog-container article {
     background-color: rgba(58, 49, 139, 0.7);
   }
   main .blog-container h2 {
-    padding: 1em 0 2em 0;
+    padding: 0 0 1em 0;
   }
   main .blog-container .blog-content {
     display: flex;
@@ -407,10 +407,11 @@ main .blog-container article {
   main .blog-container .blog-content img {
     width: 25vw;
     border-radius: 8px;
+    align-self: center;
   }
   main .blog-container .blog-content article {
     width: 35vw;
-    margin: 2em;
+    margin: 0 0 2em 2em;
   }
   main .blog-container .blog-content article p {
     text-align: left;
