@@ -1,7 +1,5 @@
 @import "../../style";
 
-// Styling for main page content in less than 650px
-
 main {
     font-family: 'Alegreya', serif;
     display: flex;
@@ -24,8 +22,9 @@ main {
 
         img {
             width: 60vw;
-            border-radius: 8px;
+            border-radius: 50%;
             margin-top: 1em;
+            box-shadow: 0 0 2em rgb(69, 69, 69);
         }
 
         .textarea {
@@ -39,6 +38,7 @@ main {
 
             img {
                 width: 25px;
+                box-shadow: none;
             }
 
             a:hover {
@@ -65,8 +65,6 @@ main {
     }
 }
 
-// Changes for screens wider than 650px
-
 @media only screen and (min-width: $small) {
 
     main {
@@ -77,8 +75,8 @@ main {
         padding-top: 4em;
 
         img {
-            width: 50vw;
-            margin: 0;
+            width: 40vw;
+            margin: 0.5em;
         }
 
         .textarea {
@@ -90,8 +88,6 @@ main {
         }
     }   
 } 
-    
-// Responsiveness for desktop, more than 1100px wide
 
 @media only screen and (min-width: $medium) {
 
@@ -102,7 +98,8 @@ main {
             padding: 3em;
 
             img {
-                width: 24vw;
+                width: 15vw;
+                margin: 1vw;
             }
 
             .textarea {
