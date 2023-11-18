@@ -59,7 +59,7 @@ header {
 
         .dropbtn {
             background-color:  rgb(58, 49, 139, 0.0);
-            color: $secondary-color;
+            color: $third-color;
             padding: 16px;
             font-size: 28px;
             transition: 0.35s ease-out;
@@ -101,7 +101,7 @@ header {
     }
 
     .dropbtn:hover, .dropdown:focus .dropbtn { 
-      color: $third-color;
+      color: $secondary-color;
       transition: 0.5s;
       cursor: pointer;
     }

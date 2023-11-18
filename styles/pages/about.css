@@ -73,7 +73,7 @@ header .dropdown {
 }
 header .dropdown .dropbtn {
   background-color: rgba(58, 49, 139, 0);
-  color: #1ac0c0;
+  color: #cccccc;
   padding: 16px;
   font-size: 28px;
   transition: 0.35s ease-out;
@@ -109,7 +109,7 @@ header .dropdown:focus .dropdown-content {
   visibility: visible;
 }
 header .dropbtn:hover, header .dropdown:focus .dropbtn {
-  color: #cccccc;
+  color: #1ac0c0;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -222,7 +222,7 @@ header .dropdown {
 }
 header .dropdown .dropbtn {
   background-color: rgba(58, 49, 139, 0);
-  color: #1ac0c0;
+  color: #cccccc;
   padding: 16px;
   font-size: 28px;
   transition: 0.35s ease-out;
@@ -258,7 +258,7 @@ header .dropdown:focus .dropdown-content {
   visibility: visible;
 }
 header .dropbtn:hover, header .dropdown:focus .dropbtn {
-  color: #cccccc;
+  color: #1ac0c0;
   transition: 0.5s;
   cursor: pointer;
 }

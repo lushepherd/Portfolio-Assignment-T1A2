@@ -21,7 +21,7 @@ main {
         flex-wrap: wrap;
 
         img {
-            width: 60vw;
+            width: 50vw;
             border-radius: 50%;
             margin-top: 1em;
             box-shadow: 0 0 2em rgb(69, 69, 69);
@@ -42,15 +42,19 @@ main {
             }
 
             a:hover {
-                color:$secondary-color;
+                background-color: $secondary-color;
                 transition: 0.5s;
             }
 
             a {
-                text-decoration: underline;
-                color: $third-color;
-                font-size: 1.3em;
-                    margin: 1em;
+                border: 1px solid $primary-color;
+                    padding: 5px 10px;
+                    border-radius: 12px;
+                    color: $primary-color;
+                    background-color: $third-color;
+                    text-decoration: none;
+                    font-weight: 600;
+                    margin: 2em auto 0 auto;
             }
 
             p {

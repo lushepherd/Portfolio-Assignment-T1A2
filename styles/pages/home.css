@@ -50,7 +50,7 @@ header .dropdown {
 }
 header .dropdown .dropbtn {
   background-color: rgba(58, 49, 139, 0);
-  color: #1ac0c0;
+  color: #cccccc;
   padding: 16px;
   font-size: 28px;
   transition: 0.35s ease-out;
@@ -86,7 +86,7 @@ header .dropdown:focus .dropdown-content {
   visibility: visible;
 }
 header .dropbtn:hover, header .dropdown:focus .dropbtn {
-  color: #cccccc;
+  color: #1ac0c0;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -205,7 +205,7 @@ main .main-box {
   flex-wrap: wrap;
 }
 main .main-box img {
-  width: 60vw;
+  width: 50vw;
   border-radius: 50%;
   margin-top: 1em;
   box-shadow: 0 0 2em rgb(69, 69, 69);
@@ -224,14 +224,18 @@ main .main-box .textarea img {
   box-shadow: none;
 }
 main .main-box .textarea a:hover {
-  color: #1ac0c0;
+  background-color: #1ac0c0;
   transition: 0.5s;
 }
 main .main-box .textarea a {
-  text-decoration: underline;
-  color: #cccccc;
-  font-size: 1.3em;
-  margin: 1em;
+  border: 1px solid rgb(58, 49, 139);
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: rgb(58, 49, 139);
+  background-color: #cccccc;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 2em auto 0 auto;
 }
 main .main-box .textarea p {
   font-size: 1.2em;
