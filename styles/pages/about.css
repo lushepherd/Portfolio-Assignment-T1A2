@@ -362,6 +362,12 @@ main .about-me .about-me-container section {
   justify-content: center;
   align-items: center;
 }
+main .about-me .about-me-container section h5 {
+  font-size: 1.1em;
+}
+main .about-me .about-me-container section p {
+  padding-bottom: 1em;
+}
 main .about-me .about-me-container section .work-history, main .about-me .about-me-container section .education-history {
   width: 90%;
 }
@@ -369,6 +375,7 @@ main .about-me .about-me-container section .work-history h3, main .about-me .abo
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
   padding: 1em;
+  font-size: 1.2em;
 }
 main .about-me .about-me-container section .work-history img, main .about-me .about-me-container section .education-history img {
   width: 25px;
