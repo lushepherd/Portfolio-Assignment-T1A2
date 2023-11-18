@@ -27,30 +27,53 @@ main {
         color: $third-color;
         text-align: center;
 
-        h2 {
-            font-size: 2em;
-            width: 100%;
-            text-decoration: underline;
+        .image-container {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .about-me-container {
 
-            margin-top: 2em;
-
-            img {
-                width: 60vw;
-                border-radius: 50%;
-                box-shadow: 0 0 2em rgb(58, 49, 139);
-            }
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             section {
-                margin: 2em auto;
+                margin: 1em auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                #resume-btn {
+                .work-history, .education-history {
+               
+                    width: 90%;
+
+                    h3 {
+                        border-top: 1px solid $third-color;
+                        border-bottom: 1px solid $third-color;
+                        padding: 1em;
+                    }
+
+                    img {
+                        width: 25px;
+                        margin: 0;
+                        box-shadow: none;
+                    }
+                }
+
+                .education-history {
+
+                    border-bottom: 1px solid $third-color;
+                }
+
+                #return-to-top-btn {
+
                     border: 1px solid $primary-color;
                     padding: 5px 10px;
                     border-radius: 12px;
@@ -58,19 +81,59 @@ main {
                     background-color: $third-color;
                     text-decoration: none;
                     font-weight: 400;
-                    margin-top: 1em;
-                    
+                    margin: 2em auto 0 auto;
+                }
                 }
 
-                #resume-btn:hover {
-
-                    background-color: $secondary-color;
-                    transition: 0.5s;
-                }
+                
             }
+
+        h2 {
+            font-size: 2em;
+            width: 100%;
+            text-decoration: underline;
+        }
+
+        .image-container {
+            
+            img {
+                width: 60vw;
+                border-radius: 50%;
+                box-shadow: 0 0 2em rgb(58, 49, 139);
+                margin-bottom: 2em;
+            }
+
+            .button-menu {
+
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                width: 60vw;
+
+                #resume-btn, #work-history-btn, #education-history-btn {
+                    border: 1px solid $primary-color;
+                    padding: 5px 10px;
+                    border-radius: 12px;
+                    color: $primary-color;
+                    background-color: $third-color;
+                    text-decoration: none;
+                    font-weight: 400;
+                }
+
+            }
+
+            #resume-btn:hover, #work-history-btn:hover, #education-history-btn:hover {
+
+                background-color: $secondary-color;
+                transition: 0.5s;
+            }
+
+        }
+
+        
         }
     }
-}
+
          
 // Styling on screens 650px and wider
 
@@ -82,25 +145,28 @@ main {
         .about-me {
             width: 60vw;
             padding: 2em;
+            flex-direction: column;
+
+            .image-container {
+
+                .button-menu {
+
+                    max-width: 30vw;
+                }
+                
+                img {
+                    width: 300px;
+                    height: 100%;
+                }
+            }
 
             .about-me-container {
                 display: flex;
                 justify-content: center;
                 gap: 1em;
                 margin: 1em;
-                padding-bottom: 2em;
                 flex-wrap: wrap;
                 align-items: center;
-                
-                img {
-                    width: 300px;
-                    height: 100%;
-                }
-
-                section {                    
-                    width: 50vw;
-                    margin: 0;
-                }
             }
         }
     }
@@ -120,35 +186,61 @@ main {
             h2 {
                 border-bottom: 1px solid $third-color;
                 text-decoration: none;
-                margin: 0 0.5em 0.5em 0.5em;
+                width: 50vw;
+                margin: 0 auto 2em auto;
                 }
 
-            .about-me-container {
-                width: 100%;
-                height: 100%;
-                justify-content: space-between;
-                flex-direction: row;
-                margin: 1em 0 0 0;
-                padding: 0;
+            .page-container {
 
-                section {
+                display: flex;
 
-                    height: 100%;
-                    justify-content: space-around;
+    
+                .about-me-container {
+
+                    padding-left: 350px;
                     text-align: left;
-                    width: 35vw;
 
-                    #resume-btn {
+                    section {
 
-                        align-self: flex-start;
+                        text-align: center;
+
+                        #return-to-top-btn {
+
+                            width: 25%;
+                            }
                     }
+    
+                    .about-me-text {
+    
+                        text-align: left;
+                        }
                 }
 
-                img {
+                .image-container {
+                    width: 300px;
+                    align-self: flex-start;
+                    position: fixed;
+                    margin-left: 1.5em;
 
-                    width: 20vw;
-                }
+                    img {
+
+                        width: 300px;
+                        height: 300px;
+                    }
+
+                    .button-menu {
+
+                        width: 300px;
+                    }
+
             }
+            
+
+        
+
+            }
+
+            
         }
     }
-}    
+}
