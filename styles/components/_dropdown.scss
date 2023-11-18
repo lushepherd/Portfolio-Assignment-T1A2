@@ -1,0 +1,89 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+
+/*Text component 1
+    On screens less than 650px, a hamburger icon with a dropdown menu appears and the main 
+    nav bar displayed on wider screens is hidden.
+    The dropdown menu icon is styled with colour/ sizing/ hover/ focus
+    The menu that appears has been styled to appear in the correct place on focus/click with
+    a nice transition, styled for 100 viewport width, is slightly less transparent. Text links
+    have been styled to match site with colour, font-size, background hover. */
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+      .dropbtn {
+          background-color:  rgb(58, 49, 139, 0.0);
+          color: $third-color;
+          padding: 16px;
+          font-size: 28px;
+          transition: 0.35s ease-out;
+          cursor: pointer;
+      }
+
+      .dropdown-content {
+        position: absolute;
+        top: 55px;
+        right: -20px;
+        font-size: 24px;
+        text-align: center;
+        background-color:  rgb(58, 49, 139, 0.9);
+        width: 100vw;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 100000;
+        visibility: hidden;
+        transition: 0.35s ease-out;
+
+          a {
+              color:$third-color;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+          }
+
+          a:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+            transition: 0.35s;
+          }  
+        } 
+    }
+
+  .dropdown:focus .dropdown-content {
+    outline: none;
+    transform: translateY(20px);
+    visibility: visible;
+  }
+
+  .dropbtn:hover, .dropdown:focus .dropbtn { 
+    color: $secondary-color;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .dropdown .dd-mask {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0; opacity: 0;
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+  }
+
+  .dropdown:focus .dd-mask {
+    display: inline-block;
+  }
+
+  .dropdown .dd-mask:focus .dropdown-content {
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  @media screen and (min-width: $small) {
+
+    .dropbtn {
+        display: none;
+    }
+  }  

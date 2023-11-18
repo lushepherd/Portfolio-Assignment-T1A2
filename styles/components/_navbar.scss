@@ -1,0 +1,39 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+
+/*Text component 2
+    On screens wider than 650px, the hamburger/dropdown menu disappears and a nav bar takes it's place.
+    Text is styled to match my website in font colour, colour change on hover. 
+    Flexbox is used to align the text in the position I want.    */
+
+
+nav {
+    display: none;
+}
+
+@media screen and (min-width: $small) {
+
+    .navmenu {
+        margin-right: 3vw;
+        display: flex;
+    
+    a {
+        text-decoration: none;
+        color: $third-color;
+        font-size: 1.3em;
+        margin: 10px;
+    }
+    a:hover {
+        color: $secondary-color;
+        transition: 0.5s;
+        text-decoration: underline;
+    }
+    }
+}
+
+@media screen and (min-width: $medium) {
+
+    .navmenu {
+        margin-right: 5vw;
+    }
+}
