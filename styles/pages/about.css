@@ -392,7 +392,7 @@ main .about-me .about-me-container section #return-to-top-btn {
   color: rgb(58, 49, 139);
   background-color: #cccccc;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
   margin: 2em auto 0 auto;
 }
 main .about-me h2 {
@@ -420,7 +420,7 @@ main .about-me .image-container .button-menu #resume-btn, main .about-me .image-
   color: rgb(58, 49, 139);
   background-color: #cccccc;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
 }
 main .about-me .image-container #resume-btn:hover, main .about-me .image-container #work-history-btn:hover, main .about-me .image-container #education-history-btn:hover {
   background-color: #1ac0c0;
