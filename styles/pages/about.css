@@ -397,6 +397,12 @@ main .about-me .about-me-container {
   justify-content: center;
   align-items: center;
 }
+main .about-me .about-me-container h2 {
+  font-size: 2em;
+  width: 50vw;
+  border-bottom: 1px solid #cccccc;
+  margin-top: 0;
+}
 main .about-me .about-me-container section {
   margin: 0.5em auto;
   display: flex;
@@ -412,9 +418,6 @@ main .about-me .about-me-container section h5 {
 }
 main .about-me .about-me-container section p {
   padding-bottom: 1em;
-}
-main .about-me .about-me-container section .work-history, main .about-me .about-me-container section .education-history {
-  width: 90%;
 }
 main .about-me .about-me-container section .work-history h3, main .about-me .about-me-container section .education-history h3 {
   border-top: 1px solid #cccccc;
@@ -439,12 +442,6 @@ main .about-me .about-me-container section #return-to-top-btn {
   text-decoration: none;
   font-weight: 600;
   margin: 2em auto 0 auto;
-}
-main .about-me h2 {
-  font-size: 2em;
-  width: 100%;
-  text-decoration: underline;
-  margin-top: 0;
 }
 main .about-me .image-container img {
   width: 60vw;
@@ -501,26 +498,26 @@ main .about-me .image-container #resume-btn:hover, main .about-me .image-contain
   main .about-me {
     padding: 3em;
   }
-  main .about-me h2 {
-    border-bottom: 1px solid #cccccc;
-    text-decoration: none;
-    width: 50vw;
-  }
   main .about-me .page-container {
     display: flex;
   }
   main .about-me .page-container .about-me-container {
     padding-left: 350px;
-    text-align: left;
+  }
+  main .about-me .page-container .about-me-container .about-me-text {
+    text-align: center;
+  }
+  main .about-me .page-container .about-me-container h2 {
+    border-bottom: 1px solid #cccccc;
+    text-decoration: none;
+    width: 30vw;
+    text-align: center;
   }
   main .about-me .page-container .about-me-container section {
     text-align: center;
   }
   main .about-me .page-container .about-me-container section #return-to-top-btn {
     width: 25%;
-  }
-  main .about-me .page-container .about-me-container .about-me-text {
-    text-align: left;
   }
   main .about-me .page-container .image-container {
     width: 300px;

@@ -6,7 +6,9 @@
 @import "../../style";
   
 /* Styling for all blog pages */
-/*   Text component 4- blog text   */
+/*   Text component 4- blog text  
+    Responsive, different text-alignment on different screen widths.
+    Colour, font and size overridden to match website theme. */
 
 main {
     display: flex;
