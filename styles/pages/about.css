@@ -356,7 +356,7 @@ main .about-me .about-me-container {
   align-items: center;
 }
 main .about-me .about-me-container section {
-  margin: 1em auto;
+  margin: 0.5em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -460,7 +460,6 @@ main .about-me .image-container #resume-btn:hover, main .about-me .image-contain
     border-bottom: 1px solid #cccccc;
     text-decoration: none;
     width: 50vw;
-    margin: 0 auto 2em auto;
   }
   main .about-me .page-container {
     display: flex;

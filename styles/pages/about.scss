@@ -44,7 +44,7 @@ main {
             align-items: center;
 
             section {
-                margin: 1em auto;
+                margin: 0.5em auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -196,7 +196,6 @@ main {
                 border-bottom: 1px solid $third-color;
                 text-decoration: none;
                 width: 50vw;
-                margin: 0 auto 2em auto;
                 }
 
             .page-container {
