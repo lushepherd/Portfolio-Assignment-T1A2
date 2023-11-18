@@ -6,21 +6,27 @@
     <link rel="stylesheet" href="../styles/pages/blog.css">
     <title>Lucy's Portfolio</title>
 
-    <!-- link for font awesome -->
+    <!-- link for font awesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
     <header>
-        <div class="leftheader">
+        <!-- Graphical content component 1 -->
+        <div class="logo">
             <img src="../images/coffeecat-removebg-preview.png" alt="Pixel art of a cat sitting at a desk drinking coffee">
            <h1>Lucy Shepherd</h1>
         </div>
 
-        <!-- Dropdown menu for widths less than 650px -->
+        <!-- Text component 1
+            Dropdown menu for widths less than 650px 
+            Tabindex make both the dropdown and i class focusable
+            The i class is an invisible button mask that allows a repeated click to close the menu
+            The a class anchors the dropdown content
+            Dropdown content appears on click    -->
         
         <div class="dropdown" tabindex="1">
-            <i class="db2" tabindex="1"></i>
+            <i class="dd-mask" tabindex="1"></i>
             <a class="dropbtn"><i class="fa-solid fa-bars"></i></a>
             <div class="dropdown-content">
                 <a href="../index.html">Home</a>
@@ -30,7 +36,9 @@
             </div>
         </div>
 
-        <!-- Nav bar for widths greater than 650px -->
+        <!--Text component 2 
+            Nav bar for widths greater than 650px - 
+            On wider screens the hamburger disappears and a normal nav bar appears -->
 
         <nav class="navmenu">
             <div class="links">
@@ -44,7 +52,7 @@
 
     <main>
 
-        <!-- Featured blog area -->
+        <!-- Blog with 5 sample posts, placeholder text and 1 image each -->
 
             <div class="blog-container">
                 <div class="featured-blog">
@@ -59,19 +67,12 @@
                             </article>
                         </a> 
                 </div> 
-            </div> 
-
-                <!-- Empty divs used for borders -->
-
+            </div>
             <div class="divide">   
                 <div class="border"></div>    
                 <h3>Older blog posts</h3>
                 <div class="border"></div>
             </div>      
-
-        
-            <!-- Older blog area -->
-
         <div class="other-blogs">
             <div class="blog-list">
                 <a href="./blog2.html">

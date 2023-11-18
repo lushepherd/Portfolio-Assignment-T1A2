@@ -4,8 +4,15 @@
 @import "../../styles/defaults/breakpoints";
 @import "../../styles/components/utils";
 @import "../../style";
-    
-// Widths less than 650px
+
+
+/*  Graphical component 2 - Images and text for my contact info
+    Each type of contact has it's own div - email, phone, address which
+    contains the contact info and image. This allows me to display them
+    in the alignment I want. 
+    Images are styled with sizing, border radius and dropshadow to match my website 
+    theme, text is styled with website font colour.
+    All use flexbox tor alignment   */
 
 main {
     display: flex;
@@ -58,8 +65,6 @@ main {
         }
     }
 }    
-            
-// Screen widths more than 650px
 
 @media only screen and (min-width: $small) {
 
@@ -91,8 +96,6 @@ main {
         }
     }   
 }
-  
-// Screen widths greater than 1100px
 
 @media only screen and (min-width: $medium) {
 

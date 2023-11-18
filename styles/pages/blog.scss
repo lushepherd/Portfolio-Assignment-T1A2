@@ -5,9 +5,6 @@
 @import "../components/utils";
 @import "../../style";
   
-
-// Style for widths less than 650px 
-
 main {
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +70,14 @@ main {
                 }
             }
         }
+
+        /*  Graphical component 4 - Blog images and text
+            Images are responsive at different screen widths
+            Styled with vw, border radius
+            Text is styled as header/ date/ paragraph
+            Font and colour to match website theme
+            Image and text displayed in a card format   */
+            
             .other-blogs {
                 display: flex;
                 flex-wrap: wrap;

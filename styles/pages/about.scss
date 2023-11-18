@@ -5,7 +5,14 @@
 @import "../components/utils";
 @import "../../style";
 
-// Widths less than 650px
+/*  Graphical component 3 
+    Image of myself and 3 links styled as buttons - resume/ work history/ education
+    Image is responsive on smaller screens and fixed from 650px and wider. Styled with
+    border radius and drop shadow.
+    Links are styled as buttons for visibility, responsive on smaller screens and fixed
+    1100px and wider. Border, border-radius, font-style, background colour all styled.
+    Background colour changes on hover. 
+    Image and links are fixed 1100px and wider when page is scrolled  */   
 
 main {
     display: flex;
@@ -57,6 +64,11 @@ main {
                 p {
                     padding-bottom: 1em;
                 }
+
+                
+                /*   Text component 3
+                    Text styled with font, font-color, font-sizing, font weight (on styled link/button,
+                    borders   */ 
 
                 .work-history, .education-history {
                
@@ -139,13 +151,8 @@ main {
             }
 
         }
-
-        
-        }
     }
-
-         
-// Styling on screens 650px and wider
+}
 
 @media only screen and (min-width: $small) {
        
@@ -181,9 +188,6 @@ main {
         }
     }
 }
-   
-
-// Styling for screens 1100px and wider
             
 @media only screen and (min-width: $medium) {
 
@@ -232,7 +236,6 @@ main {
 
                     img {
 
-                        width: 300px;
                         height: 300px;
                     }
 

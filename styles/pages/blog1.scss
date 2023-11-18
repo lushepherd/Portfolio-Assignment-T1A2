@@ -5,7 +5,8 @@
 @import "../components/utils";
 @import "../../style";
   
-// Styling for all blog pages
+/* Styling for all blog pages */
+/*   Text component 4- blog text   */
 
 main {
     display: flex;
@@ -43,7 +44,11 @@ main {
 
         article {
             width: 60vw;
-            margin-top: 1em;               
+            margin-top: 1em; 
+            
+            p {
+                font-size: 1.1em;
+            }
         }    
     }
 }
@@ -72,7 +77,7 @@ main {
                 align-items: center;
 
                 img {
-                    width: 60vw;
+                    width: 55vw;
                 }
 
                 article{
@@ -104,7 +109,7 @@ main {
             }
 
             .blog-content {
-                margin: 0 1em 0 1.5em;
+                margin: 2em 1em 0 1.5em;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;

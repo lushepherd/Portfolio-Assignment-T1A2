@@ -2,7 +2,25 @@
 @import "../components/utils";
 @import "../defaults/breakpoints";
 
-// Styling of the header bar
+
+/*  Header contains text components 1 & 2, graphical component 1
+
+    Graphical component 1 is the pixel cat image in the top left with my name under ".logo"
+    Image is a fixed size on all screens styled in a circle with border-radius and added drop-shadow.
+    Text in my name changes size wider than 650px screen width.
+
+    Text component 1
+    On screens less than 650px, a hamburger icon with a dropdown menu appears and the main 
+    nav bar displayed on wider screens is hidden.
+    The dropdown menu icon is styled with colour/ sizing/ hover/ focus
+    The menu that appears has been styled to appear in the correct place on focus/click with
+    a nice transition, styled for 100 viewport width, is slightly less transparent. Text links
+    have been styled to match site with colour, font-size, background hover. 
+    
+    Text component 2
+    On screens wider than 650px, the hamburger/dropdown menu disappears and a nav bar takes it's place.
+    Text is styled to match my website in font colour, colour change on hover. 
+    Flexbox is used to align the text in the position I want.    */
 
 header {
     background-color:  rgb(58, 49, 139, 0.7);
@@ -12,13 +30,11 @@ header {
     padding: 10px 20px;
     border-bottom: 10px solid $third-color;
 
-    // Hiding the nav menu on smaller screens 
-
     nav {
         display: none;
     }
 
-    .leftheader {
+    .logo {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -33,10 +49,9 @@ header {
         img {
             width: 80px;
             border-radius: 50%;
+            box-shadow: 0 0 2em rgb(58, 49, 139);
         }
     }
-
-    // Dropdown menu styling
 
     .dropdown {
       position: relative;
@@ -93,7 +108,7 @@ header {
 
     }
 
-    .dropdown .db2 {
+    .dropdown .dd-mask {
       position: absolute;
       top: 0; right: 0; bottom: 0; left: 0; opacity: 0;
       z-index: 10;
@@ -101,11 +116,11 @@ header {
       cursor: pointer;
     }
 
-    .dropdown:focus .db2 {
+    .dropdown:focus .dd-mask {
       display: inline-block;
     }
 
-    .dropdown .db2:focus .dropdown-content {
+    .dropdown .dd-mask:focus .dropdown-content {
       outline: none;
       visibility: hidden;
       opacity: 0;
@@ -115,7 +130,7 @@ header {
 
     header {
 
-        .leftheader {
+        .logo {
             margin-left: 3vw;
 
             h1 {
@@ -125,17 +140,7 @@ header {
 
         .navmenu {
             margin-right: 3vw;
-        }
-    }
-
-    // Hiding dropdown button on wider screens and displaying the navmenu instead
-
-    .dropbtn {
-        display: none;
-    }
-
-    .navmenu {
-        display: flex;
+            display: flex;
         
         a {
             text-decoration: none;
@@ -149,15 +154,19 @@ header {
             transition: 0.5s;
             text-decoration: underline;
         }
+        }
+    }
+
+    .dropbtn {
+        display: none;
     }
 }
 
-// Larger left and right margins for 1100px width and above
 
 @media screen and (min-width: $medium) {
     header {
         
-        .leftheader {
+        .logo {
             margin-left: 5vw;
         }
 
