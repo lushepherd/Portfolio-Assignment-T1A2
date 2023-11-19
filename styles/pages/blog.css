@@ -376,6 +376,53 @@ body {
   color: #cccccc;
 }
 
+.featured-blog a {
+  text-decoration: none;
+  color: #cccccc;
+}
+.featured-blog h2 {
+  font-size: 2em;
+  width: 100%;
+  margin-top: 0;
+}
+.featured-blog .feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.featured-blog .feature img {
+  width: 60vw;
+  border-radius: 8px;
+}
+.featured-blog .feature article {
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.featured-blog .feature article img {
+  width: 25px;
+}
+.featured-blog .feature article .continue-reading-btn {
+  border: 1px solid rgb(58, 49, 139);
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: rgb(58, 49, 139);
+  background-color: #cccccc;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 1em;
+}
+.featured-blog .feature article .continue-reading-btn:hover {
+  background-color: #1ac0c0;
+  transition: 0.5s;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -553,6 +600,7 @@ main .blog-container .other-blogs .blog-list .blog p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 1em;
   }
   main .blog-container .featured-blog .feature article {
     width: 22vw;

@@ -53,8 +53,6 @@ main {
         }    
     }
 }
-        
-// Screens wider than 650px
 
 @media only screen and (min-width: $small) {
         
@@ -87,9 +85,7 @@ main {
             }
         }
     }    
-}   
-    
-// Screens wider than 1100px
+}      
 
 @media only screen and (min-width: $medium) {
 

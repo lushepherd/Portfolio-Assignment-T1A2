@@ -3,6 +3,7 @@
 @import "../../styles/defaults/colors";
 @import "../../styles/defaults/breakpoints";
 @import "../../style";
+@import "../components/featured-blog";
   
 main {
     display: flex;
@@ -242,8 +243,8 @@ main {
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
-                        align-items: center;
-                    
+                        align-items: center;  
+                        padding-top: 1em;               
                     
                         article {
                             width: 22vw;                             
