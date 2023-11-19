@@ -22,56 +22,18 @@ footer a:hover {
   transition: 0.5s;
 }
 
-/*  Header contains text components 1 & 2, graphical component 1
-
-    Graphical component 1 is the pixel cat image in the top left with my name under ".logo"
-    Image is a fixed size on all screens styled in a circle with border-radius and added drop-shadow.
-    Text in my name changes size wider than 650px screen width.
-
-    Text component 1
+/*Text component 1
     On screens less than 650px, a hamburger icon with a dropdown menu appears and the main 
     nav bar displayed on wider screens is hidden.
     The dropdown menu icon is styled with colour/ sizing/ hover/ focus
     The menu that appears has been styled to appear in the correct place on focus/click with
     a nice transition, styled for 100 viewport width, is slightly less transparent. Text links
-    have been styled to match site with colour, font-size, background hover. 
-
-    Text component 2
-    On screens wider than 650px, the hamburger/dropdown menu disappears and a nav bar takes it's place.
-    Text is styled to match my website in font colour, colour change on hover. 
-    Flexbox is used to align the text in the position I want.    */
-header {
-  background-color: rgba(58, 49, 139, 0.7);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-bottom: 10px solid #cccccc;
-}
-header nav {
-  display: none;
-}
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-header .logo h1 {
-  margin: 0;
-  padding: 0;
-  color: #cccccc;
-  font-size: 1.2em;
-}
-header .logo img {
-  width: 80px;
-  border-radius: 50%;
-  box-shadow: 0 0 2em rgb(58, 49, 139);
-}
-header .dropdown {
+    have been styled to match site with colour, font-size, background hover. */
+.dropdown {
   position: relative;
   display: inline-block;
 }
-header .dropdown .dropbtn {
+.dropdown .dropbtn {
   background-color: rgba(58, 49, 139, 0);
   color: #cccccc;
   padding: 16px;
@@ -79,7 +41,7 @@ header .dropdown .dropbtn {
   transition: 0.35s ease-out;
   cursor: pointer;
 }
-header .dropdown .dropdown-content {
+.dropdown .dropdown-content {
   position: absolute;
   top: 55px;
   right: -20px;
@@ -92,23 +54,25 @@ header .dropdown .dropdown-content {
   visibility: hidden;
   transition: 0.35s ease-out;
 }
-header .dropdown .dropdown-content a {
+.dropdown .dropdown-content a {
   color: #cccccc;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-header .dropdown .dropdown-content a:hover {
+.dropdown .dropdown-content a:hover {
   background-color: #1ac0c0;
   color: rgb(58, 49, 139);
   transition: 0.35s;
 }
-header .dropdown:focus .dropdown-content {
+
+.dropdown:focus .dropdown-content {
   outline: none;
   transform: translateY(20px);
   visibility: visible;
 }
-header .dropbtn:hover, header .dropdown:focus .dropbtn {
+
+.dropbtn:hover, .dropdown:focus .dropbtn {
   color: #1ac0c0;
   transition: 0.5s;
   cursor: pointer;
@@ -137,30 +101,76 @@ header .dropbtn:hover, header .dropdown:focus .dropbtn {
 }
 
 @media screen and (min-width: 650px) {
-  header .logo {
-    margin-left: 3vw;
+  .dropbtn {
+    display: none;
   }
-  header .logo h1 {
-    font-size: 1.5em;
-  }
-  header .navmenu {
+}
+/*Text component 2
+    On screens wider than 650px, the hamburger/dropdown menu disappears and a nav bar takes it's place.
+    Text is styled to match my website in font colour, colour change on hover. 
+    Flexbox is used to align the text in the position I want.    */
+nav {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .navmenu {
     margin-right: 3vw;
     display: flex;
   }
-  header .navmenu a {
+  .navmenu a {
     text-decoration: none;
     color: #cccccc;
     font-size: 1.3em;
     margin: 10px;
   }
-  header .navmenu a:hover {
+  .navmenu a:hover {
     color: #1ac0c0;
-    transform: scale(1.3);
     transition: 0.5s;
     text-decoration: underline;
   }
-  .dropbtn {
-    display: none;
+}
+@media screen and (min-width: 1100px) {
+  .navmenu {
+    margin-right: 5vw;
+  }
+}
+/*  Header contains text components 1 & 2, graphical component 1
+
+    Graphical component 1 is the pixel cat image in the top left with my name under ".logo"
+    Image is a fixed size on all screens styled in a circle with border-radius and added drop-shadow.
+    Text in my name changes size wider than 650px screen width.*/
+header {
+  background-color: rgba(58, 49, 139, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 10px solid #cccccc;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .logo h1 {
+  margin: 0;
+  padding: 0;
+  color: #cccccc;
+  font-size: 1.2em;
+}
+header .logo img {
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 2em rgb(58, 49, 139);
+}
+
+@media screen and (min-width: 650px) {
+  header .logo {
+    margin-left: 3vw;
+  }
+  header .logo h1 {
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -171,56 +181,18 @@ header .dropbtn:hover, header .dropdown:focus .dropbtn {
     margin-right: 5vw;
   }
 }
-/*  Header contains text components 1 & 2, graphical component 1
-
-    Graphical component 1 is the pixel cat image in the top left with my name under ".logo"
-    Image is a fixed size on all screens styled in a circle with border-radius and added drop-shadow.
-    Text in my name changes size wider than 650px screen width.
-
-    Text component 1
+/*Text component 1
     On screens less than 650px, a hamburger icon with a dropdown menu appears and the main 
     nav bar displayed on wider screens is hidden.
     The dropdown menu icon is styled with colour/ sizing/ hover/ focus
     The menu that appears has been styled to appear in the correct place on focus/click with
     a nice transition, styled for 100 viewport width, is slightly less transparent. Text links
-    have been styled to match site with colour, font-size, background hover. 
-
-    Text component 2
-    On screens wider than 650px, the hamburger/dropdown menu disappears and a nav bar takes it's place.
-    Text is styled to match my website in font colour, colour change on hover. 
-    Flexbox is used to align the text in the position I want.    */
-header {
-  background-color: rgba(58, 49, 139, 0.7);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-bottom: 10px solid #cccccc;
-}
-header nav {
-  display: none;
-}
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-header .logo h1 {
-  margin: 0;
-  padding: 0;
-  color: #cccccc;
-  font-size: 1.2em;
-}
-header .logo img {
-  width: 80px;
-  border-radius: 50%;
-  box-shadow: 0 0 2em rgb(58, 49, 139);
-}
-header .dropdown {
+    have been styled to match site with colour, font-size, background hover. */
+.dropdown {
   position: relative;
   display: inline-block;
 }
-header .dropdown .dropbtn {
+.dropdown .dropbtn {
   background-color: rgba(58, 49, 139, 0);
   color: #cccccc;
   padding: 16px;
@@ -228,7 +200,7 @@ header .dropdown .dropbtn {
   transition: 0.35s ease-out;
   cursor: pointer;
 }
-header .dropdown .dropdown-content {
+.dropdown .dropdown-content {
   position: absolute;
   top: 55px;
   right: -20px;
@@ -241,23 +213,25 @@ header .dropdown .dropdown-content {
   visibility: hidden;
   transition: 0.35s ease-out;
 }
-header .dropdown .dropdown-content a {
+.dropdown .dropdown-content a {
   color: #cccccc;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-header .dropdown .dropdown-content a:hover {
+.dropdown .dropdown-content a:hover {
   background-color: #1ac0c0;
   color: rgb(58, 49, 139);
   transition: 0.35s;
 }
-header .dropdown:focus .dropdown-content {
+
+.dropdown:focus .dropdown-content {
   outline: none;
   transform: translateY(20px);
   visibility: visible;
 }
-header .dropbtn:hover, header .dropdown:focus .dropbtn {
+
+.dropbtn:hover, .dropdown:focus .dropbtn {
   color: #1ac0c0;
   transition: 0.5s;
   cursor: pointer;
@@ -286,30 +260,76 @@ header .dropbtn:hover, header .dropdown:focus .dropbtn {
 }
 
 @media screen and (min-width: 650px) {
-  header .logo {
-    margin-left: 3vw;
+  .dropbtn {
+    display: none;
   }
-  header .logo h1 {
-    font-size: 1.5em;
-  }
-  header .navmenu {
+}
+/*Text component 2
+    On screens wider than 650px, the hamburger/dropdown menu disappears and a nav bar takes it's place.
+    Text is styled to match my website in font colour, colour change on hover. 
+    Flexbox is used to align the text in the position I want.    */
+nav {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+  .navmenu {
     margin-right: 3vw;
     display: flex;
   }
-  header .navmenu a {
+  .navmenu a {
     text-decoration: none;
     color: #cccccc;
     font-size: 1.3em;
     margin: 10px;
   }
-  header .navmenu a:hover {
+  .navmenu a:hover {
     color: #1ac0c0;
-    transform: scale(1.3);
     transition: 0.5s;
     text-decoration: underline;
   }
-  .dropbtn {
-    display: none;
+}
+@media screen and (min-width: 1100px) {
+  .navmenu {
+    margin-right: 5vw;
+  }
+}
+/*  Header contains text components 1 & 2, graphical component 1
+
+    Graphical component 1 is the pixel cat image in the top left with my name under ".logo"
+    Image is a fixed size on all screens styled in a circle with border-radius and added drop-shadow.
+    Text in my name changes size wider than 650px screen width.*/
+header {
+  background-color: rgba(58, 49, 139, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 10px solid #cccccc;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .logo h1 {
+  margin: 0;
+  padding: 0;
+  color: #cccccc;
+  font-size: 1.2em;
+}
+header .logo img {
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 2em rgb(58, 49, 139);
+}
+
+@media screen and (min-width: 650px) {
+  header .logo {
+    margin-left: 3vw;
+  }
+  header .logo h1 {
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -384,56 +404,84 @@ main .about-me {
   color: #cccccc;
   text-align: center;
 }
-main .about-me .image-container {
+main .about-me .page-container {
+  /*   Text component 3
+          Text styled with font, font-color, font-sizing, font weight (on styled link/button,
+          borders   */
+}
+main .about-me .page-container .image-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .about-me .about-me-container {
+main .about-me .page-container .about-me-container {
   margin-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60vw;
 }
-main .about-me .about-me-container h2 {
+main .about-me .page-container .about-me-container h2 {
   font-size: 2em;
-  width: 50vw;
+  width: 60vw;
   border-bottom: 1px solid #cccccc;
-  margin-top: 0;
+  margin: 1em auto;
 }
-main .about-me .about-me-container section {
-  margin: 0.5em auto;
+main .about-me .page-container .about-me-container .cat-images .luna {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  width: 50vw;
+  padding: 2em 0 1em 0;
+  margin-top: 1em;
+}
+main .about-me .page-container .about-me-container .cat-images .luna img {
+  border-radius: 8px;
+  width: 50vw;
+}
+main .about-me .page-container .about-me-container .cat-images .teddie {
+  width: 50vw;
+  padding: 2em 0 1em 0;
+}
+main .about-me .page-container .about-me-container .cat-images .teddie img {
+  width: 50vw;
+  border-radius: 8px;
+}
+main .about-me .page-container .work-and-study-history {
+  margin: 1em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*   Text component 3
-      Text styled with font, font-color, font-sizing, font weight (on styled link/button,
-      borders   */
 }
-main .about-me .about-me-container section h5 {
-  font-size: 1.1em;
-}
-main .about-me .about-me-container section p {
-  padding-bottom: 1em;
-}
-main .about-me .about-me-container section .work-history h3, main .about-me .about-me-container section .education-history h3 {
+main .about-me .page-container .work-and-study-history .work-history h3, main .about-me .page-container .work-and-study-history .education-history h3 {
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
-  padding: 1em;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  width: 60vw;
+  padding: 1em 0;
 }
-main .about-me .about-me-container section .work-history img, main .about-me .about-me-container section .education-history img {
+main .about-me .page-container .work-and-study-history .work-history img, main .about-me .page-container .work-and-study-history .education-history img {
   width: 25px;
   margin: 0;
   box-shadow: none;
 }
-main .about-me .about-me-container section .education-history {
-  border-bottom: 1px solid #cccccc;
+main .about-me .page-container .work-and-study-history .work-history article h5, main .about-me .page-container .work-and-study-history .education-history article h5 {
+  font-size: 1.2em;
 }
-main .about-me .about-me-container section #return-to-top-btn {
+main .about-me .page-container .work-and-study-history .work-history h3 {
+  margin: 0 auto 2em auto;
+}
+main .about-me .page-container .work-and-study-history .education-history {
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 1em;
+  padding-bottom: 2em;
+}
+main .about-me .page-container .work-and-study-history .education-history h3 {
+  margin: 2em auto;
+}
+main .about-me .page-container .work-and-study-history #return-to-top-btn {
   border: 1px solid rgb(58, 49, 139);
   padding: 5px 10px;
   border-radius: 12px;
@@ -474,56 +522,82 @@ main .about-me .image-container #resume-btn:hover, main .about-me .image-contain
     max-width: 100vw;
   }
   main .about-me {
-    width: 60vw;
-    padding: 2em;
     flex-direction: column;
   }
-  main .about-me .image-container .button-menu {
+  main .about-me .page-container .image-container .button-menu {
     max-width: 30vw;
   }
-  main .about-me .image-container img {
+  main .about-me .page-container .image-container img {
     width: 300px;
     height: 100%;
   }
-  main .about-me .about-me-container {
+  main .about-me .page-container .about-me-container {
     display: flex;
     justify-content: center;
-    gap: 1em;
-    margin: 1em;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0 1em;
+  }
+  main .about-me .page-container .about-me-container h2 {
+    width: 55vw;
+  }
+  main .about-me .page-container .about-me-container .cat-images {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #cccccc;
+    margin-top: 2em;
+  }
+  main .about-me .page-container .about-me-container .cat-images .luna, main .about-me .page-container .about-me-container .cat-images .teddie {
+    width: 20vw;
+    margin: 2em 1em 0 1em;
+    padding: 1em;
+    border-radius: 8px;
+    border: none;
+  }
+  main .about-me .page-container .about-me-container .cat-images .luna img, main .about-me .page-container .about-me-container .cat-images .teddie img {
+    width: 20vw;
+  }
+  main .about-me .page-container .about-me-container .work-and-study-history .work-history h3, main .about-me .page-container .about-me-container .work-and-study-history .education-history h3 {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    font-size: 1.4em;
+    width: 55vw;
+    padding: 1em 0;
   }
 }
 @media only screen and (min-width: 1100px) {
   main .about-me {
-    padding: 3em;
-  }
-  main .about-me .page-container {
-    display: flex;
+    width: 70vw;
   }
   main .about-me .page-container .about-me-container {
     padding-left: 350px;
-  }
-  main .about-me .page-container .about-me-container .about-me-text {
-    text-align: center;
+    width: 35vw;
   }
   main .about-me .page-container .about-me-container h2 {
-    border-bottom: 1px solid #cccccc;
-    text-decoration: none;
-    width: 30vw;
-    text-align: center;
+    width: 35vw;
   }
-  main .about-me .page-container .about-me-container section {
-    text-align: center;
+  main .about-me .page-container .about-me-container .cat-images {
+    width: 35vw;
   }
-  main .about-me .page-container .about-me-container section #return-to-top-btn {
+  main .about-me .page-container .about-me-container .cat-images .luna, main .about-me .page-container .about-me-container .cat-images .teddie {
+    width: 10vw;
+    margin: 2em 1em 0 1em;
+    padding: 1em;
+    border-radius: 8px;
+  }
+  main .about-me .page-container .about-me-container .cat-images .luna img, main .about-me .page-container .about-me-container .cat-images .teddie img {
+    width: 100%;
+  }
+  main .about-me .page-container .about-me-container .work-and-study-history .work-history h3, main .about-me .page-container .about-me-container .work-and-study-history .education-history h3 {
+    width: 35vw;
+  }
+  main .about-me .page-container .about-me-container .work-and-study-history #return-to-top-btn {
     width: 25%;
   }
   main .about-me .page-container .image-container {
     width: 300px;
     align-self: flex-start;
     position: fixed;
-    margin-left: 1.5em;
   }
   main .about-me .page-container .image-container img {
     height: 300px;

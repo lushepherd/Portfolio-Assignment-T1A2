@@ -2,7 +2,6 @@
 @import "../../styles/components/header";
 @import "../../styles/defaults/colors";
 @import "../../styles/defaults/breakpoints";
-@import "../components/utils";
 @import "../../style";
 
 /*  Graphical component 3 
@@ -34,85 +33,129 @@ main {
         color: $third-color;
         text-align: center;
 
-        .image-container {
+        .page-container {
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+            .image-container {
 
-        .about-me-container {
-
-            margin-top: 1em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            h2 {
-                font-size: 2em;
-                width: 50vw;
-                border-bottom: 1px solid $third-color;
-                margin-top: 0;
-            }
-
-            section {
-                margin: 0.5em auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+            }
 
-                h5 {
-                    font-size: 1.1em;
+            .about-me-container {
+
+                margin-top: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 60vw;
+    
+                h2 {
+                    font-size: 2em;
+                    width: 60vw;
+                    border-bottom: 1px solid $third-color;
+                    margin: 1em auto;
                 }
 
-                p {
-                    padding-bottom: 1em;
-                }
+                .cat-images {
 
-                
-                /*   Text component 3
-                    Text styled with font, font-color, font-sizing, font weight (on styled link/button,
-                    borders   */ 
+                    .luna {
 
-                .work-history, .education-history {
-
-                    h3 {
                         border-top: 1px solid $third-color;
                         border-bottom: 1px solid $third-color;
-                        padding: 1em;
-                        font-size: 1.2em;
+                        width: 50vw;
+                        padding: 2em 0 1em 0;
+                        margin-top: 1em;
+    
+                        img {
+                            border-radius: 8px;
+                            width: 50vw;
+                        }
+                    }
+    
+                    .teddie {
+                        width: 50vw;
+                        padding: 2em 0 1em 0;
+    
+                        img {
+                            width: 50vw;
+                            border-radius: 8px;
+                        }
+                        }
+                    }
+                }
+    
+                /*   Text component 3
+                        Text styled with font, font-color, font-sizing, font weight (on styled link/button,
+                        borders   */ 
+
+                .work-and-study-history {
+                    margin: 1em auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .work-history, .education-history {
+    
+                        h3 {
+                            border-top: 1px solid $third-color;
+                            border-bottom: 1px solid $third-color;
+                            font-size: 1.4em;
+                            width: 60vw;
+                            padding: 1em 0;
+                        }
+    
+                        img {
+                            width: 25px;
+                            margin: 0;
+                            box-shadow: none;
+                        }
+
+                        article {
+
+                            h5 {
+
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                    
+                    .work-history {
+
+                        h3 {
+                            margin: 0 auto 2em auto;
+                        }
                     }
 
-                    img {
-                        width: 25px;
-                        margin: 0;
-                        box-shadow: none;
+                    .education-history {
+    
+                        border-bottom: 1px solid $third-color;
+                        margin-bottom: 1em;
+                        padding-bottom: 2em;
+
+                        h3 {
+                            margin: 2em auto;
+
+                        }
                     }
-                }
-
-                .education-history {
-
-                    border-bottom: 1px solid $third-color;
-                }
-
-                #return-to-top-btn {
-
-                    border: 1px solid $primary-color;
-                    padding: 5px 10px;
-                    border-radius: 12px;
-                    color: $primary-color;
-                    background-color: $third-color;
-                    text-decoration: none;
-                    font-weight: 600;
-                    margin: 2em auto 0 auto;
-                }
-                }
-
-                
-            }
+    
+                    #return-to-top-btn {
+    
+                        border: 1px solid $primary-color;
+                        padding: 5px 10px;
+                        border-radius: 12px;
+                        color: $primary-color;
+                        background-color: $third-color;
+                        text-decoration: none;
+                        font-weight: 600;
+                        margin: 2em auto 0 auto;
+                    }
+                }     
+        }
+    
 
         .image-container {
             
@@ -147,10 +190,10 @@ main {
                 background-color: $secondary-color;
                 transition: 0.5s;
             }
-
-        }
+        }    
     }
 }
+
 
 @media only screen and (min-width: $small) {
        
@@ -158,66 +201,119 @@ main {
         max-width: 100vw;
 
         .about-me {
-            width: 60vw;
-            padding: 2em;
             flex-direction: column;
 
-            .image-container {
+            .page-container {
 
-                .button-menu {
-
-                    max-width: 30vw;
+                .image-container {
+    
+                    .button-menu {
+    
+                        max-width: 30vw;
+                    }
+                    
+                    img {
+                        width: 300px;
+                        height: 100%;
+                    }
                 }
-                
-                img {
-                    width: 300px;
-                    height: 100%;
-                }
-            }
 
-            .about-me-container {
-                display: flex;
-                justify-content: center;
-                gap: 1em;
-                margin: 1em;
-                flex-wrap: wrap;
-                align-items: center;
+                .about-me-container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin: 0 1em;
+
+                    h2 {
+                        width: 55vw;     
+                    }
+                    
+                    .cat-images {
+
+                        display: flex;
+                        justify-content: center;
+                        border-top: 1px solid $third-color;
+                        margin-top: 2em;
+
+                        .luna, .teddie {
+
+                            width: 20vw;
+                            margin: 2em 1em 0 1em;
+                            padding: 1em;
+                            border-radius: 8px;
+                            border: none;
+        
+                            img {
+        
+                                width: 20vw;
+                            }
+                        }
+                    }
+                    .work-and-study-history {
+    
+                        .work-history, .education-history {
+        
+                            h3 {
+                                border-top: 1px solid $third-color;
+                                border-bottom: 1px solid $third-color;
+                                font-size: 1.4em;
+                                width: 55vw;
+                                padding: 1em 0;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-}
-            
+}    
+    
 @media only screen and (min-width: $medium) {
 
     main {
 
         .about-me {
-            padding: 3em;
+
+            width: 70vw;
 
             .page-container {
-
-                display: flex;
    
                 .about-me-container {
 
                     padding-left: 350px;
-
-                    .about-me-text {
-
-                        text-align: center;
-                    }
+                    width: 35vw;
 
                     h2 {
-                        border-bottom: 1px solid $third-color;
-                        text-decoration: none;
-                        width: 30vw;
-                        text-align: center;
+                        width: 35vw;
                         }
+
+                    .cat-images {
+
+                        width: 35vw;
+
+                        .luna, .teddie {
+
+                            width: 10vw;
+                            margin: 2em 1em 0 1em;
+                            padding: 1em;
+                            border-radius: 8px;
         
+                            img {
+        
+                                width: 100%;
+                            }
+                        }
+                    }    
 
-                    section {
+                    .work-and-study-history {
 
-                        text-align: center;
+                        .work-history, .education-history {
+
+                            h3 {
+                                width: 35vw;
+                            }
+                        }
 
                         #return-to-top-btn {
 
@@ -230,7 +326,7 @@ main {
                     width: 300px;
                     align-self: flex-start;
                     position: fixed;
-                    margin-left: 1.5em;
+                   
 
                     img {
 
@@ -246,3 +342,4 @@ main {
         }
     }
 }
+    
