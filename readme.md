@@ -16,7 +16,7 @@ The purpose of this website is to:
 
 ## Sitemap
 
-![Sitemap](/docs/Sitemap.png)
+![Sitemap](/docs/sitemap.png)
 
 ## Functionality and features
 
