@@ -35,6 +35,7 @@ The homepage is the landing page and first thing people see when they visit my w
 
 ![Mobile Screenshot 1](/docs/screenshot-home-mobile1.png)
 ![Mobile Screenshot 2 - Dropdown](/docs/screenshot-home-mobile2.png)
+![Mobile Screenshot 3 - Footer](/docs/screenshot-home-mobile3.png)
 ![Tablet Screenshot](/docs/screenshot-home-tablet.png)
 ![Desktop Screenshot](/docs/screenshot-home-desktop.png)
 
@@ -44,6 +45,7 @@ The about me page is to share my professional work and study history to prospect
 
 - Header and footer with my name, navigation and social media links
 - A clear photo of me to show who I am
+- Pictures of my cats who inspired a lot of the images on my website
 - A link to download my resume styled like a button so it is clearly visible
 - A link to jump to the "Work history" and "education" sections as it is a longer webpage
 - The introductory "About me" is a short profile or overview of my work history
@@ -52,9 +54,15 @@ The about me page is to share my professional work and study history to prospect
 - Return to top link at the bottom for easy navigation
 - Responsive layout - on desktop view the photo and links are fixed in place while scrolling the work/education history.
 
-![Screenshot mobile](/docs/screenshot-about-mobile.png)
-![Screenshot tablet](/docs/screenshot-about-tablet.png)
-![Screenshot desktop](/docs/screenshot-about-desktop.png)
+![Screenshot mobile - Top](/docs/screenshot-about-mobile.png)
+![Screenshot mobile - Middle](/docs/screenshot-about-mobile2.png)
+![Screenshot mobile - Footer](/docs/screenshot-about-mobile3.png)
+![Screenshot tablet - Top](/docs/screenshot-about-tablet.png)
+![Screenshot tablet - Middle](/docs/screenshot-about-tablet1.png)
+![Screenshot tablet - Footer](/docs/screenshot-about-tablet2.png)
+![Screenshot desktop - Top](/docs/screenshot-about-desktop1.png)
+![Screenshot desktop - Middle](/docs/screenshot-about-desktop2.png)
+![Screenshot desktop - Footer](/docs/screenshot-about-desktop3.png)
 
  ### Contact
 
@@ -63,7 +71,8 @@ The contact page is to clearly display different ways I can be contacted.
 - Email, phone and address displayed with cute related images
 - Displayed in a responsive format for phone, tablet and desktop view with flexbox
 
-![Screenshot Mobile](/docs/screenshot-contact-mobile.png)
+![Screenshot Mobile - Top](/docs/screenshot-contact-mobile.png)
+![Screenshot Mobile - Middle with cat images](/docs/screenshot-contact-mobile2.png)
 ![Screenshot Tablet](/docs/screenshot-contact-tablet.png)
 ![Screenshot Desktop](/docs/screenshot-contact-desktop.png)
 
@@ -79,7 +88,9 @@ The blog page is to demonstrate more of my personality with the content and the 
 
 ![Screenshot Mobile 1](/docs/screenshot-blog-mobile1.png)
 ![Screenshot Mobile 2](/docs/screenshot-blog-mobile2.png)
-![Screenshot Tablet 1](/docs/screenshot-blog-tablet1.png)
+![Screenshot Mobile 3](/docs/screenshot-blog-mobile3.png)
+![Screenshot Mobile 4](/docs/screenshot-blog-mobile4.png)
+![Screenshot Tablet 1](/docs/screenshot-blog-tablet.png)
 ![Screenshot Tablet 2](/docs/screenshot-blog-tablet2.png)
 ![Screenshot Desktop 1](/docs/screenshot-blog-desktop1.png)
 ![Screenshot Desktop 2](/docs/screenshot-blog-desktop2.png)
@@ -94,7 +105,9 @@ The blog pages demonstage a different layout and show an image with text, displa
 - I used one style sheet for all of the blog pages so they are all styled in the same way. Images and text would be changed in the html page. This means I can keep an html template to fill out for each new blog page without needing to change the css. This also means if I updated anything in the layout I would only be changing the one style sheet.
 
 ![Screenshot Mobile](/docs/screenshot-blogpage-mobile.png)
+![Screenshot Mobile](/docs/screenshot-blogpage-mobile1.png)
 ![Screenshot Tablet](/docs/screenshot-blogpage-tablet.png)
+![Screenshot Tablet](/docs/screenshot-blogpage-tablet1.png)
 ![Screenshot Desktop](/docs/screenshot-blogpage-desktop.png)
 
 ### Target Audience
