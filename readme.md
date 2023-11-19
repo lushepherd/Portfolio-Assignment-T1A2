@@ -3,7 +3,7 @@
 ## Links
  - [Website](https://lucysportfolio.netlify.app/)
  - [Github](https://github.com/lushepherd/Portfolio-Assignment-T1A2) 
- - [Presentation Video](https://www.youtube.com/watch?v=kg0olaGGFqM)
+ - [Presentation Video](https://youtu.be/p0USTBEcoP0)
 
  ## Purpose
 
