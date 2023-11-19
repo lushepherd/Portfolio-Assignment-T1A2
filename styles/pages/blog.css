@@ -419,9 +419,10 @@ main .blog-container .featured-blog h2 {
 }
 main .blog-container .featured-blog .feature {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 2em;
-  padding-bottom: 1em;
 }
 main .blog-container .featured-blog .feature img {
   width: 60vw;
@@ -434,6 +435,24 @@ main .blog-container .featured-blog .feature article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2em;
+}
+main .blog-container .featured-blog .feature article img {
+  width: 25px;
+}
+main .blog-container .featured-blog .feature article .continue-reading-btn {
+  border: 1px solid rgb(58, 49, 139);
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: rgb(58, 49, 139);
+  background-color: #cccccc;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 1em;
+}
+main .blog-container .featured-blog .feature article .continue-reading-btn:hover {
+  background-color: #1ac0c0;
+  transition: 0.5s;
 }
 main .blog-container .other-blogs {
   display: flex;
@@ -441,9 +460,6 @@ main .blog-container .other-blogs {
   justify-content: center;
   padding: 1em;
   margin: 0;
-}
-main .blog-container .other-blogs .border {
-  border: 0;
 }
 main .blog-container .other-blogs .blog-list a {
   text-decoration: none;
@@ -473,19 +489,25 @@ main .blog-container .other-blogs .blog-list .blog p {
   main {
     max-width: 100vw;
   }
+  main .blog-container .divide .border {
+    width: 50vw;
+  }
   main .blog-container .featured-blog {
     margin: 0 auto;
     width: 60vw;
     padding: 0;
   }
-  main .blog-container .featured-blog .feature h2 {
-    padding: 1em;
+  main .blog-container .featured-blog h2 {
+    padding: 0em;
+    margin: 0 auto 1em auto;
   }
-  main .blog-container .featured-blog .feature p {
-    padding: 1em;
+  main .blog-container .featured-blog .feature img, main .blog-container .featured-blog .feature article {
+    width: 50vw;
+    margin-bottom: 1em;
   }
   main .blog-container .other-blogs {
-    margin: 1em auto 0 auto;
+    margin: 1em 0;
+    width: 60vw;
   }
   main .blog-container .other-blogs h3 {
     margin: 1em;
@@ -500,12 +522,12 @@ main .blog-container .other-blogs .blog-list .blog p {
     justify-content: center;
   }
   main .blog-container .other-blogs .blog-list .blog {
-    width: 25vw;
+    width: 20vw;
     border: 1px solid #cccccc;
     padding: 1em;
   }
   main .blog-container .other-blogs .blog-list .blog img {
-    width: 25vw;
+    width: 100%;
     margin: 1em 0 0 0;
   }
 }
@@ -517,18 +539,26 @@ main .blog-container .other-blogs .blog-list .blog p {
     padding: 0;
   }
   main .blog-container .featured-blog {
-    margin: 2em auto 0 auto;
-    height: 100%;
+    margin: 2em;
+    width: 50vw;
   }
   main .blog-container .featured-blog h2 {
     padding: 0.5em;
     margin: 0;
+    border-bottom: 1px solid #cccccc;
+    width: 50vw;
+  }
+  main .blog-container .featured-blog .feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   main .blog-container .featured-blog .feature article {
-    width: 50vw;
+    width: 22vw;
   }
   main .blog-container .featured-blog .feature img {
-    width: 50vw;
+    width: 22vw;
   }
   main .blog-container .other-blogs {
     margin: 0 1em 4em 1em;

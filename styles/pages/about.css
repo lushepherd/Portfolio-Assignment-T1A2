@@ -599,9 +599,6 @@ main .about-me .image-container #resume-btn:hover, main .about-me .image-contain
     align-self: flex-start;
     position: fixed;
   }
-  main .about-me .page-container .image-container img {
-    height: 300px;
-  }
   main .about-me .page-container .image-container .button-menu {
     width: 300px;
   }
